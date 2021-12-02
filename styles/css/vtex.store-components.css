@@ -5,6 +5,12 @@
   font-size: 12px;
   text-decoration: underline;
 }
+.logoLink{
+  padding-left: 5px;
+}
+.autoCompleteOuterContainer{
+  position: relative;
+}
 
 .infoCardContainer--info-card-home {
   max-width: 1520px;

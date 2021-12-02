@@ -87,4 +87,7 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+  .paragraph--deals{
+    color: black;
+  }
 }

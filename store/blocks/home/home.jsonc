@@ -18,15 +18,15 @@
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 720,
+      "height": 350,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/banners/banner.webp",
+          "mobileImage": "assets/banners/banner.webp"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/banners/banner1.webp",
+          "mobileImage": "assets/banners/banner1.webp"
         }
       ]
     }
@@ -40,13 +40,18 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "showPaginationDots": "desktopOnly",
+      "blockClass": "carousel-home",
+      "autoplay":{
+        "timeout": 4500
+      }
     }
   },
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Ofertas",
+      "textPosition":"left",
       "blockClass": "shelfTitle"
     }
   },

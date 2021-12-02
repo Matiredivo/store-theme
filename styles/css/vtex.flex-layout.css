@@ -15,14 +15,17 @@
     padding: 0 0.25rem;
   }
 }
+.flexRowContent--menu-link {
+  border-top: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+}
 
 .flexRowContent--menu-link {
-  background-color: #03044e;
-  color: #fff;
+  background-color: #ffffff;
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .flexRowContent--main-header-mobile {
@@ -41,7 +44,7 @@
   font-size: 14px;
 }
 .flexRow--deals {
-  background-color: #a7afbd;
+  background-color: #ffffff;
   padding: 14px 0px;
 }
 

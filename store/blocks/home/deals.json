@@ -5,6 +5,7 @@
       "flex-layout.col#deals2",
       "flex-layout.col#deals3",
       "flex-layout.col#deals4"
+    
     ],
     "props": {
       "blockClass": "deals"
@@ -19,13 +20,13 @@
   },
   "image#deal1": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "src": "assets/deals/envio.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal1": {
     "props": {
-      "text": "Free shipping",
+      "text": "Envío gratis en compras de mas de $2000",
       "blockClass": "deals"
     }
   },
@@ -37,13 +38,13 @@
   },
   "image#deal2": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "src": "assets/deals/comocomprar.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal2": {
     "props": {
-      "text": "One day delivery",
+      "text": "Como comprar",
       "blockClass": "deals"
     }
   },
@@ -55,13 +56,13 @@
   },
   "image#deal3": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
+      "src": "assets/deals/retiroentienda.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal3": {
     "props": {
-      "text": "Pick up in store",
+      "text": "Retira gratis en nuestras sucursales",
       "blockClass": "deals"
     }
   },
@@ -73,13 +74,13 @@
   },
   "image#deal4": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
+      "src": "assets/deals/estadopedido.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal4": {
     "props": {
-      "text": "Exclusive deals",
+      "text": "Consulta el estado de tu pedido",
       "blockClass": "deals"
     }
   }

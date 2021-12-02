@@ -1,13 +1,19 @@
 {
   "vtex.menu@2.x:menu#websites": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#smartphones",
+      "menu-item#notebooks",
+      "menu-item#audio",
+      "menu-item#accesorios",
+      "menu-item#marcas"
     ]
   },
-  "menu-item#shop": {
+  "menu-item#smartphones": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-smartphones",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -15,8 +21,118 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "Smartphones",
+        "text": "Smartphones"
+      }
+    }
+  },
+  "menu-item#notebooks": {
+    "props": {
+      "id": "menu-item-notebooks",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Notebooks",
+        "text": "Notebooks"
+      }
+    }
+  },
+  "menu-item#audio": {
+    "props": {
+      "id": "menu-item-audio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Audio",
+        "text": "Audio"
+      }
+    }
+  },
+  "menu-item#accesorios": {
+    "props": {
+      "id": "menu-item-accesorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Accesorios",
+        "text": "Accesorios"
+      }
+    }
+  },
+  "menu-item#marcas": {
+    "props": {
+      "id": "menu-item-marcas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/",
+        "noFollow": false,
+        "tagTitle": "Marcas",
+        "text": "Marcas"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-marcas"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-marcas": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-marcas"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-marcas": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-marcas-samsung",
+      "menu-item#category-marcas-accesoriossilicon"
+    ]
+  },
+  "menu-item#category-marcas-samsung": {
+    "props": {
+      "id": "menu-item-category-marcas-samsung",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "Samsung",
+        "text": "Samsung"
+      }
+    }
+  },
+  "menu-item#category-marcas-accesoriossilicon": {
+    "props": {
+      "id": "menu-item-category-marcas-accesoriossilicon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Accessorios",
+        "text": "Accessorios"
       }
     }
   },
@@ -35,8 +151,8 @@
         "type": "external",
         "href": "http://vtex.com",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
+        "tagTitle": "",
+        "text": ""
       }
     }
   }

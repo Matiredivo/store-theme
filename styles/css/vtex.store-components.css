@@ -13,11 +13,17 @@
 }
 
 .infoCardContainer--info-card-home {
-  max-width: 1520px;
-  margin: 0 auto;
+  height: 300px;
+  width: 400px;
+  margin-top: 1rem;
+  margin-right: 10px;
+  margin-left: 20px;
   background-color: #e6f1e6;
   padding: 0px;
 }
+/*.infoCardHeadline--info-card-home {
+  width: 500px;
+} */
 
 .newsletter {
   background-color: #03054e;

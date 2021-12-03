@@ -18,14 +18,14 @@
 }
 
 .nameContainer {
-  justify-content: start;
+  justify-content:center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .brandName {
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 14px;
   color: #2E2E2E;
 }
 
@@ -38,5 +38,8 @@
 }
 
 .image {
-  border-radius: 0.25rem;
+  border-radius: 0.1rem;
+}
+.element{
+  background-color: #ffffff;
 }

@@ -5,6 +5,7 @@
 }
 
 .container--shelfTitle {
+  background-color: #F5F5F5;
   color: #727273;
   justify-content: center;
   text-align: center;
@@ -13,7 +14,11 @@
 .headingLevel2--shelfTitle {
   font-weight: 200;
 }
-
+.headingLevel2{
+  margin-left: 0px;
+  margin-bottom: 1px;
+  color: black;
+}
 .container--deals .paragraph {
   margin: 0;
 }
@@ -89,5 +94,8 @@
   }
   .paragraph--deals{
     color: black;
+  }
+  .wrapper--shelfTitle {
+    margin-left: 60px;
   }
 }

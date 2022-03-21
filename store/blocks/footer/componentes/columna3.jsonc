@@ -1,0 +1,125 @@
+{
+    "flex-layout.row#fiscal-data": {
+      "title": "Footer Column Three",
+      "children": ["flex-layout.col#fiscal-data"]
+    },
+    "flex-layout.col#fiscal-data": {
+      "props": {
+        "preventVerticalStretch": true
+      },
+      "children": ["rich-text#fiscal-data", "flex-layout.row#image-fiscal-data"]
+    },
+  
+    "rich-text#fiscal-data": {
+      "title": "Column Title",
+      "props": {
+        "text": "### DATA FISCAL",
+        "blockClass": "title-column-footer"
+      }
+    },
+  
+    "flex-layout.row#image-fiscal-data": {
+      "title": "Container Image",
+      "props": {
+        "blockClass": "image-fiscal-data"
+      },
+      "children": ["image#qr","image#cace", "image#cybermonday"]
+    },
+  
+    "image#qr": {
+      "title": "Image",
+      "props": {
+        "maxHeight": "90px",
+        "maxWidth": "45px",
+        "blockClass": "image-fiscal-data",
+        "src": "assets/footer/qr.jpg",
+        "link": { "url": "/link" }
+      }
+    },
+  
+    "image#cace": {
+      "title": "Image",
+      "props": {
+        "maxHeight": "60px",
+        "maxWidth": "130px",
+        "blockClass": "cace",
+        "src": "assets/footer/cace2.jpg"
+      }
+    },
+    "image#cybermonday": {
+      "title": "Image",
+      "props": {
+        "maxHeight": "160px",
+        "maxWidth": "120px",
+        "blockClass": "cyber",
+        "src": "assets/footer/cyber.png"
+      }
+    },
+    //Mobile
+      "flex-layout.row#titulo-data-fiscal":{
+        "children": ["rich-text#fiscal-data-mobile"]
+      },
+      "rich-text#fiscal-data-mobile": {
+        "title": "Column Title",
+        "props": {
+          "text": "### DATA FISCAL",
+          "blockClass": "title-column-footer"
+        }
+      },
+      
+      "flex-layout.row#fiscal-data-mobile": {
+        "title": "Footer Column Three",
+        "props": {
+          "preserveLayoutOnMobile":"true",
+          "blockClass": "fiscal-data"
+        },
+        "children": ["flex-layout.col#qr","flex-layout.col#cace","flex-layout.col#cybermonday"]
+      },
+      "flex-layout.col#qr":{
+        "props": {
+          "width":"15%",
+          "blockClass": "image-fiscal-data"
+        },
+        "children": ["image#qr-mobile"]
+      },
+    
+      "image#qr-mobile": {
+        "title": "Image",
+        "props": {
+          "src": "assets/footer/qr.jpg",
+          "link": { "url": "/link" },
+          "maxHeight": "80px",
+          "maxWidth": "50px"
+        }
+      },
+      "flex-layout.col#cace":{
+        "props": {
+          "width":"25%",
+          "blockClass": "image-fiscal-data"
+        },
+        "children": ["image#cace-mobile"]
+      },
+      "image#cace-mobile": {
+        "title": "Image",
+        "props": {
+          "src": "assets/footer/CACE.png",
+          "maxHeight": "150px",
+          "maxWidth": "100px"
+        }
+      },
+      "flex-layout.col#cybermonday":{
+        "props": {
+          "width":"20%",
+          "blockClass": "image-fiscal-data"
+        },
+        "children": ["image#cybermonday-mobile"]
+      },
+      "image#cybermonday-mobile": {
+        "title": "Image",
+        "props": {
+          "src": "assets/footer/Cybermonday.png",
+          "maxHeight": "150px",
+          "maxWidth": "100px"
+        }
+      }
+    }

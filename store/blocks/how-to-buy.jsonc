@@ -1,0 +1,133 @@
+{
+  "store.custom#comprar-ahora": {
+    "blocks": [
+      "flex-layout.row#how-to-buy",
+      "flex-layout.row#como-comprar"
+    ]
+  },
+
+  "flex-layout.row#how-to-buy": {
+    "props":{
+      "blockClass": "como-comprar"
+    },
+    "children": [
+      "flex-layout.col#Titulo-buy"
+    ]
+  },
+ 
+"flex-layout.col#Titulo-buy":{
+  "props":{
+    "blockClass": "como-comprar"
+  },
+"children": [
+  "rich-text#Titulo-buy"
+]
+},
+  "rich-text#Titulo-buy": {
+    "props": {
+      "text": "CÓMO COMPRAR",
+      "blockClass": "title-General"
+    }
+  },
+  "flex-layout.row#como-comprar":{
+    "props":{
+      "blockClass": "como-comprar"
+    },
+  "children": [
+    "flex-layout.col#text-buy"
+  ]
+},
+  "flex-layout.col#text-buy":{
+    "props": {
+      "blockClass": "como-comprar"
+    },
+    "children": [
+      "rich-text#Titulo-BIENVENIDO",
+      "rich-text#Desc-buy",
+      "flex-layout.col#list-comprar"
+    ]
+  },
+
+  "rich-text#Titulo-BIENVENIDO": {
+    "props": {
+      "text": "BIENVENIDO A NUESTRA TIENDA ONLINE!",
+      "blockClass": "titles-buy"
+    }
+  },
+
+  "rich-text#Desc-buy": {
+    "props": {
+      "text": "Comprar es muy sencillo, seguí estos pasos:",
+      "blockClass": "desc-buy"
+    }
+  },
+
+  "flex-layout.col#list-comprar":{
+      "children": [
+        "rich-text#List-1C",
+        "rich-text#List-2C",
+        "rich-text#List-3C",
+        "rich-text#List-4C",
+        "rich-text#List-5C",
+        "rich-text#List-6C",
+        "rich-text#List-7C",
+        "rich-text#List-8C",
+        "rich-text#List-9C"
+      ]
+  },
+
+  "rich-text#List-1C": {
+      "props": {
+        "text": "1_ Ingresá a nuestro sitio www.farmaciastkl.com y elegí el/los productos que desees.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-2C": {
+      "props": {
+        "text": "2_ Una vez que ya tengas todos los productos en el carrito hacé click en Finalizar compra.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-3C": {
+      "props": {
+        "text": "3_ Completá tus datos de pago (trabajamos con Mercado Pago).",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-4C": {
+      "props": {
+        "text": "4_Podés elegir retirar sin cargo tu compra por una de nuestras sucursales o recibirlo por correo. Si estás en CABA y tu compra es igual o mayor a $1500.- el envío es gratis.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-5C": {
+      "props": {
+        "text": "5_ En el listado podrás revisar los productos y montos de tu pedido. Hacé clic en Confirmar.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-6C": {
+      "props": {
+        "text": "6_ En unos minutos te llegará un mail con el pedido. Ese correo no representa un comprobante de compra. La misma se confirmará al momento de validarse la transacción, constatándose existencia de stock, validez de método de pago y veracidad de los datos proporcionados. Una vez aprobado el pago se despachará el pedido.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-7C": {
+      "props": {
+        "text": "7_ La factura por la compra te llegará junto al pedido (o al retirar el mismo por la sucursal elegida al momento de la compra).",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-8C": {
+    "props": {
+      "text": "Si tenés alguna duda contactanos por mail a tienda@farmaciastkl.com.",
+      "blockClass": "list-buy"
+    }
+},
+"rich-text#List-9C": {
+    "props": {
+      "text": "El horario de atención al cliente es de lunes a viernes de 9 a 18 hs.",
+      "blockClass": "list-buy"
+    }
+}
+}

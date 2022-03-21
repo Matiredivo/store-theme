@@ -1,177 +1,60 @@
 {
   "store.custom#faq": {
+    "blocks": [
+      "flex-layout.row#how-to-buy",
+      "flex-layout.row#como-comprar",
+      "flex-layout.row#formas-de-entrega"
+    ]
+  },
+  "flex-layout.row#formas-de-entrega":{
+    "props":{
+      "blockClass": "como-comprar"
+    },
+  "children": [
+    "flex-layout.col#text-buy-e"
+  ]
+},
+  "flex-layout.col#text-buy-e":{
+    "props": {
+      "blockClass": "como-comprar"
+    },
     "children": [
-      "flex-layout.row#faq"
+      "rich-text#Titulo-como-comprar",
+      "flex-layout.col#envios-gratis"
     ]
   },
 
-  "flex-layout.row#faq": {
+  "rich-text#Titulo-como-comprar": {
     "props": {
-      "blockClass": "faq"
-    },
-    "children": [
-      "flex-layout.col#faq"
-    ]
-  },
-
-  "flex-layout.col#faq": {
-    "children": [
-      "rich-text#faq",
-      "disclosure-layout-group#group"
-    ]
-  },
-  "rich-text#faq": {
-    "props": {
-      "text": "## FAQ"
+      "text": "FORMAS DE ENTREGA",
+      "blockClass": "titles-buy"
     }
   },
 
-  "disclosure-layout-group#group": {
-    "children": [
-      "disclosure-layout#first",
-      "disclosure-layout#second",
-      "disclosure-layout#third",
-      "disclosure-layout#fourth"
-    ]
+  "flex-layout.col#envios-gratis":{
+      "children": [
+        "rich-text#List-1e",
+        "rich-text#List-2e",
+        "rich-text#List-3e"
+      ]
   },
 
-  "disclosure-layout#first": {
-    "props": {
-      "animated": true
-    },
-    "children": ["disclosure-trigger#first", "disclosure-content#first"]
+  "rich-text#List-1e": {
+      "props": {
+        "text": "Si tu compra es igual o superior a $1500.- y vivís o trabajás en CABA podés recibir tu pedido gratis en un plazo de 72 hs. hábiles luego de confirmado. Los envíos se realizan de lunes a viernes en una franja horaria de 10 a 18 hs (sin elección de hora exacta).",
+        "blockClass": "list-buy"
+      }
   },
-  "disclosure-trigger#first": {
-    "props": {
-      "blockClass": "question",
-      "as": "div"
-    },
-    "children": ["disclosure-state-indicator", "rich-text#question1"]
+  "rich-text#List-2e": {
+      "props": {
+        "text": "Al momento de finalizar la compra elegí “Envío gratis en CABA”.",
+        "blockClass": "list-buy"
+      }
   },
-  "disclosure-content#first": {
-    "props": {
-      "blockClass": "answer"
-    },
-    "children": ["rich-text#answer1"]
-  },
-  "rich-text#question1": {
-    "props": {
-      "text": "How can I change my shipping address?"
-    }
-  },
-  "rich-text#answer1": {
-    "props": {
-      "text": "Call us at the number (212) 1234-1234."
-    }
-  },
-
-  "disclosure-layout#second": {
-    "props": {
-      "animated": true
-    },
-    "children": ["disclosure-trigger#second", "disclosure-content#second"]
-  },
-  "disclosure-trigger#second": {
-    "props": {
-      "blockClass": "question",
-      "as": "div"
-    },
-    "children": ["disclosure-state-indicator", "rich-text#question2"]
-  },
-  "disclosure-content#second": {
-    "props": {
-      "blockClass": "answer"
-    },
-    "children": ["rich-text#answer2"]
-  },
-  "rich-text#question2": {
-    "props": {
-      "text": "How can I track my order?"
-    }
-  },
-  "rich-text#answer2": {
-    "props": {
-      "text": "After logging into your account, you can find this info at the link Orders."
-    }
-  },
-
-
-  "disclosure-layout#third": {
-    "props": {
-      "animated": true
-    },
-    "children": ["disclosure-trigger#third", "disclosure-content#third"]
-  },
-  "disclosure-trigger#third": {
-    "props": {
-      "blockClass": "question",
-      "as": "div"
-    },
-    "children": ["disclosure-state-indicator", "rich-text#question3"]
-  },
-  "disclosure-content#third": {
-    "props": {
-      "blockClass": "answer"
-    },
-    "children": ["rich-text#answer3"]
-  },
-  "rich-text#question3": {
-    "props": {
-      "text": "How can I change my shipping address?"
-    }
-  },
-  "rich-text#answer3": {
-    "props": {
-      "text": "Call us at the number (212) 1234-1234."
-    }
-  },
-
-
-  "disclosure-layout#fourth": {
-    "props": {
-      "animated": true
-    },
-    "children": ["disclosure-trigger#fourth", "disclosure-content#fourth"]
-  },
-  "disclosure-trigger#fourth": {
-    "props": {
-      "blockClass": "question",
-      "as": "div"
-    },
-    "children": ["disclosure-state-indicator", "rich-text#question4"]
-  },
-  "disclosure-content#fourth": {
-    "props": {
-      "blockClass": "answer"
-    },
-    "children": ["rich-text#answer2"]
-  },
-  "rich-text#question4": {
-    "props": {
-      "text": "How can I track my order?"
-    }
-  },
-  "rich-text#answer4": {
-    "props": {
-      "text": "After logging into your account, you can find this info at the link Orders."
-    }
-  },
-
-
-  "disclosure-state-indicator": {
-    "props": {
-      "Show": "icon-caret#down",
-      "Hide": "icon-caret#up"
-    }
-  },
-  "icon-caret#down": {
-    "props": {
-      "orientation": "down"
-    }
-  },
-  "icon-caret#up": {
-    "props": {
-      "orientation": "up"
-    }
+  "rich-text#List-3e": {
+      "props": {
+        "text": "Utilizá el campo “Comentarios” para comunicarnos todo lo que consideres importante para hacer la entrega. Por ejemplo, si va a recibirlo otra persona informanos el nombre y el DNI.",
+        "blockClass": "list-buy"
+      }
   }
 }

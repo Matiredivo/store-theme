@@ -229,11 +229,6 @@
     }
   },
 
-  "breadcrumb": {
-    "props": {
-      "showOnMobile": true
-    }
-  },
 
   "gallery": {
     "props": {
@@ -245,7 +240,7 @@
             "(min-width:1300px)": 4,
             "desktop": 3,
             "tablet": 3,
-            "phone": 2
+            "phone": 1
           }
         },
         {

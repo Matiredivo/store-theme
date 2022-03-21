@@ -1,0 +1,125 @@
+{
+  "flex-layout.row#deals1": {
+    "children": [
+      "flex-layout.col#deals4",
+      "flex-layout.col#deals5",   
+      "flex-layout.col#deals6"
+      
+    ],
+    "props": {
+      "blockClass": "deals"
+    }
+  },
+
+  "flex-layout.col#deals4": {
+    "props": {
+      "width": "30%",
+      "blockClass": "deals"
+    },
+    "children": [
+      "image#deal4"
+    ]
+  },
+  "image#deal4": {
+    "props": {
+      "blockClass": "deals",
+      "src": "assets/deals/Limpieza.jpg",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/dermocosmetica/limpieza"
+      },
+      "height": "50px",
+      "width": "350px"       
+    }
+  },
+   "flex-layout.col#deals5": {
+    "props": {
+      "width": "30%",
+      "blockClass": "deals"
+    },
+    "children": [
+      "image#deal5"
+          ]
+  },
+  "image#deal5": {
+    "props": {
+      "blockClass": "deals",
+      "src": "assets/deals/Perfumes.jpg",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/perfumes---fragancias"
+      },
+      "height": "50px",
+      "width": "350px"   	 
+    }
+  },
+  "flex-layout.col#deals6": {
+    "props": {
+      "width": "30%",
+      "blockClass": "deals"
+    },
+    "children": [
+      "image#deal6"
+    ]
+  },
+  "image#deal6": {
+    "props": {
+      "blockClass": "deals",
+      "src": "assets/deals/Solares.jpg",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/dermocosmetica/solares"
+      },
+      "height": "50px",
+      "width": "350px"   
+    }
+  },
+  "flex-layout.row#mdeals1": {
+    "children": [
+      "flex-layout.col#mdeals4",
+      "flex-layout.col#mdeals5"
+      
+    ],
+    "props": {
+      "blockClass": "mdeals"
+    }
+  },
+
+  "flex-layout.col#mdeals4": {
+    "props": {
+      "width": "30%",
+      "blockClass": "mdeals"
+    },
+    "children": [
+      "image#mdeal4"
+    ]
+  },
+  "image#mdeal4": {
+    "props": {
+      "blockClass": "deals",
+      "src": "assets/deals/Cremasfmobile.jpg",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/dermocosmetica/cremas-corporales"
+      },
+      "height":50,
+        "width":180
+    }
+  },
+   "flex-layout.col#mdeals5": {
+    "props": {
+      "width": "30%",
+      "blockClass": "mdeals"
+    },
+    "children": [
+      "image#mdeal5"
+          ]
+  },
+  "image#mdeal5": {
+    "props": {
+      "blockClass": "deals",
+      "src": "assets/deals/Limpiezamobile.jpg",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/dermocosmetica/limpieza"
+      },
+      "height":50,
+        "width":180 
+    }
+  }
+}

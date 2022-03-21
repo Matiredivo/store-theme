@@ -3,10 +3,12 @@
   font-weight: 500;
   color: #0067C7;
   font-size: .875rem;
+  text-align: left;
 }
 
 .productBrandName--summaryListMobile {
   text-decoration: none;
   color: #0067C7;
   font-size: .875rem;
+  text-align: left;
 }

@@ -1,0 +1,42 @@
+{
+"flex-layout.row#delivery": {
+    "title": "Footer Column Two",
+    "props": {
+      "blockClass": "footercolumna2"
+    },
+    "children":["flex-layout.col#delivery"]
+  },
+    "flex-layout.col#delivery": {
+      "props": {
+        "blockClass": "footercolumna2",
+        "horizontalAlign": "center"
+      },
+    "children": ["rich-text#delivery", 
+      "rich-text#delivery1"
+      //"rich-text#delivery-modal"
+    ]
+  },
+  "rich-text#delivery": {
+    "title":"Column Title and Subtitle",
+    "props": {
+      "text": "### ARREPENTIMIENTO DE COMPRA ",
+      "blockClass": "title-column-footer"
+    }
+  },
+  "rich-text#delivery1": {
+    "title":"delivery-1",
+    "props": {
+      "blockClass": "button-prefooter3",
+      "text": "[Botón de arrepentimiento](/boton)"
+    }
+  },
+  "rich-text#delivery-modal": {
+    "title":"Trigger Modal",
+    "props": {
+      "blockClass":"delivery-modal",
+      "text": "Hacer mi pedido ahora"
+    }
+  }
+
+ 
+}

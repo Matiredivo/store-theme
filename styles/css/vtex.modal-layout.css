@@ -87,3 +87,13 @@
 .paper--product-gifts {
   padding: 1.5rem;
 }
+.paper--modal-search{
+  position:fixed;
+  top: 32px;
+  width:100%;
+  padding-right: 60px;
+  padding-left: 10px;
+}
+.backdropContainer--modal-search{
+  opacity: 0!important;
+}

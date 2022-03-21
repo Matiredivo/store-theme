@@ -1,6 +1,22 @@
 .sliderLayoutContainer {
   justify-content: center;
 }
+.sliderLayoutContainer--shelf {
+  background-color:#F0F0F0 ;
+  margin-right: 55%;
+}
+.sliderLayoutContainer--mshelf {
+  background-color:#F0F0F0 ;
+  margin-right: 5.5rem;
+  padding-bottom: 4rem;
+}
+.sliderLayoutContainer--shelf-related {
+  background-color:#F0F0F0 ;
+  margin-right: 60%;
+}
+.sliderLayoutContainer--shelf-pdp-mobile {
+ margin-bottom: 1rem;
+}
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
 }
@@ -24,4 +40,12 @@
   margin-bottom: 25px;
   padding-left: .5rem;
   padding-right: .5rem;
+}
+.slide--shelf-related {
+  margin-bottom: 25px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.sliderArrows--shelf-related{
+  margin-right: 10px;
 }

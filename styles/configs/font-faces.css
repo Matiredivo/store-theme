@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'FFMarkPro.ttf';
+    src: url(assets/fonts/FFMarkPro.ttf);
+    font-weight:bold;
+  }
+ 
+  @font-face {
+    font-family: 'FFMarkProBlack.ttf';
+    src: url(assets/fonts/FFMarkProBlack.ttf);
+    font-weight:normal;
+  }
+
+  @font-face {
+    font-family: 'BebasNeueRegular.woff';
+    src: url(assets/fonts/BebasNeueRegular.woff);
+    font-weight:normal;
+  }
+
+  @font-face {
+    font-family: 'Knobber.ttf';
+    src: url(assets/fonts/Knobber.ttf);
+    font-weight:normal;
+  }

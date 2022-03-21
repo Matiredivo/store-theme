@@ -1,0 +1,60 @@
+{
+    "flex-layout.row#delivery": {
+      "title": "Footer Column Two",
+      "props": {
+        "blockClass": "footercolumna2"
+      },
+      "children": [
+        "flex-layout.col#delivery"
+      ]
+    },
+    "flex-layout.col#delivery": {
+      "props": {
+        "preventVerticalStretch": true,
+        "blockClass": "footercolumna2"
+      },
+      "children": [
+        "rich-text#delivery"
+       // "modal-trigger#delivery"
+      ]
+    },
+  
+    "rich-text#delivery": {
+      "title":"Column Title and Subtitle",
+      "props": {
+        "text": "### PEDIDOS A DOMICILIO \n\n ¿Tenes una receta\nescaneada?",
+        "blockClass": "title-column-footer"
+      }
+    },
+  
+    "modal-trigger#delivery": {
+      "props":{
+        "blockClass":"delivery-modal"
+      },
+      "children": [
+        "rich-text#delivery-modal",
+        "modal-layout#delivery"
+      ]
+    },
+  
+    "rich-text#delivery-modal": {
+      "title":"Trigger Modal",
+      "props": {
+        "blockClass":"delivery-modal",
+        "text": "HACER MI PEDIDO AHORA"
+      }
+    },
+  
+    "modal-layout#delivery": {
+      "children": [
+        "rich-text#delivery-content"
+      ]
+    },
+  
+    "rich-text#delivery-content": {
+      "title":"Modal Content",
+      "props": {
+        "text": "Aca ira el modal"
+      }
+    }
+  }

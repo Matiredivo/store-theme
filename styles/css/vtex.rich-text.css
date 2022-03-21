@@ -1,18 +1,52 @@
-.container--deals {
-  color: #ffffff;
-  text-align: center;
-  justify-content: center;
-}
 
-.container--shelfTitle {
+.container--deal {
+  color: #727273;
+  justify-content: left;
+  text-align: left;
+  background-color: #F0F0F0;
+  padding-left: 6.25rem;
+}
+.container--mdeal {
   color: #727273;
   justify-content: center;
   text-align: center;
+  background-color: #F0F0F0;
 }
-
+.container--shelfTitle {
+  padding-bottom:0.5rem;
+  padding-top: 0.25rem;
+  color: #727273;
+  justify-content: left;
+  text-align: left;
+  padding-left: 10rem;
+  background-color: #F0F0F0;
+  }
+  .container--shelfTitle1 {
+    padding-top: 0.5rem;
+    color: #727273;
+    text-align: left;
+    padding-left: 27rem;
+    background-color: #F0F0F0;
+    }
+  .container--mshelfTitle {
+    color: #727273;
+    justify-content: center;
+    text-align: center;
+    background-color: #F0F0F0;
+  }
 .headingLevel2--shelfTitle {
-  font-weight: 200;
+font-size: 20px;
+font: bold;
 }
+.headingLevel2--shelfTitle1 {
+  font-size: 18px;
+  font: bold;
+  }
+.headingLevel2--mshelfTitle {
+  padding-top: 1rem;
+  font-size: 25px;
+  font: bold;
+  }
 
 .container--deals .paragraph {
   margin: 0;
@@ -87,4 +121,277 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+  .paragraph--deal {
+    color: #727273;
+    font-weight:700;
+    font-size: 20px;
+    padding-left: 65px;
+    font: bold;
+    
+  }
+}
+.paragraph--mdeal {
+  color: #727273;
+  font-weight:700;
+  font-size: 25px;
+  font: bold;
+  
+}
+.container--title-column-footer {
+  justify-content: center;
+}
+.headingLevel3--title-column-footer {
+  color     :  #616161;
+  font-size : 17px;
+
+}
+.wrapper--title-column-footer{
+  width: 400px;
+  justify-content: center;
+  text-align: center;
+}
+.wrapper--modalfooter {
+  background-color: orange;
+  color: white;
+}
+.wrapper--shelfButton {
+  background-color: #f7941d;
+    padding: 0px 10px 0px 10px;
+}
+.paragraph--title-column-footer{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color      : #636463  ;
+  font-size  : 17px;
+ font-weight: 500;
+ line-height: 18px;
+ justify-content: center;
+ align-items: center;
+}
+.link--shelfButton{
+  color: white;
+  text-decoration: none;
+}
+.container--info-tkl{
+ padding-top: 30px;
+ margin-left:3%;
+}
+.wrapper--modalfooter{
+  padding:0px 10px 0px 10px;
+}
+.container--button{
+  padding-top: 13rem;
+}
+/*-----TERMINOS & CONDICIONES ------*/
+
+.paragraph--titles-Trems {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #636565;
+}
+
+.wrapper--desc-Trems .paragraph {
+  margin: 0;
+  color: #636565;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper--desc-Trems .paragraph .link {
+  text-decoration: none;
+  color: #636565;
+}
+
+/*-----POLITICA & PRIVACIDAD ------*/
+
+.paragraph--Desc-politica .link,
+.paragraph--Desc-politica,
+.paragraph--DSC-politica
+
+{padding-left: 7%;
+  padding-right:7%;
+  margin-bottom: 1rem;
+  color: #636565;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+.container--titles-buy{
+  color: #636565;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+.paragraph--list-buy{
+  color: #636565;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+/*----- EMPLEO ------*/
+.container--title-trabajo {
+  margin-left: 7%;
+}
+.paragraph--title-trabajo {
+   margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #3c3e3f;
+}
+.paragraph--desc-trabajo {
+  padding-left: 7%;
+  padding-right:7%;
+  margin: 0;
+  color: #636565;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+}
+/*-----TITULO GENERAL------*/
+
+.container--title-General {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.paragraph--title-General {
+  margin-top: 2rem;
+  margin-bottom: 0px;
+  color: #2E58CC;
+  font-family: "Heebo", sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+}
+/*-----Footer------*/
+.paragraph--title-column-footer {
+  padding-top: 20px;
+}
+.wrapper--button-prefooter1 {
+  background: #003575;
+  padding: 0px 10px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.wrapper--button-prefooter2 {
+  background: #f7941d;
+  padding: 0px 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 31.5rem;
+  border-radius: 5px;
+}
+.wrapper--button-prefooter3 {
+  background: #003575;
+  color:white;
+  padding: 0px 10px;
+  text-align: center;
+  margin-top: -15px;
+  border-radius: 5px;
+  margin-left: 0rem;
+}
+.link--button-prefooter1{
+  text-decoration: none;
+  color:white;
+}
+.link--button-prefooter2{
+  text-decoration: none;
+  color:white;
+}
+.link--button-prefooter3{
+  text-decoration: none;
+  color:white;
+}
+.wrapper--delivery-modal {
+  background: #f7941d;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  color:white; 
+  border-radius: 5px;
+}
+.paragraph--footer {
+  margin-left: 10rem;
+}
+.paragraph--powered {
+  margin-left: 2rem;
+}
+/*-----footer-mobile------*/
+.container--footer-mobile {
+ justify-content: center;
+}
+.paragraph--footer-mobile {
+  font-size: 10px;
+}
+.wrapper--button-arrepentimiento-mobile {
+  background: #003575;
+  padding: 0px 10px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-left: 4.5rem;
+  margin-top: 30px;
+}
+.link--button-arrepentimiento-mobile{
+  text-decoration: none;
+  color:white;
+}
+.container--newsletter{
+ background-color: #F0F0F0;
+justify-content: center;
+}
+.paragraph--newsletter {
+ color: #636565;
+ font-size: 20px;
+ font-weight: 700;
+ font-family: "Heebo", sans-serif;
+ opacity: 100;
+}
+.wrapper--receta {
+  background-color: #f7941d;
+  color:white;
+  margin-left: 5px;
+}
+.paragraph--receta {
+  margin:0px;
+ padding-top: 13px;
+ font-size: 12px;
+ font-weight: 700;
+ padding-right: 7px;
+ }
+ .container--search-bar-mobile-icon {
+  margin-top: 5px;
+  /*position: absolute;*/
+  z-index: 100;
+  cursor: pointer;
+}
+
+.container--search-bar-mobile-icon::before {
+  display: block;
+  content: " ";
+  background-image: url("assets/svg/search.svg");
+  width: 28px;
+  height: 28px;
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  visibility: visible;
+  filter: brightness(0) saturate(100%) invert(22%) sepia(11%) saturate(6310%) hue-rotate(203deg) brightness(98%) contrast(88%);
+}
+.paragraph--submenuTitle {
+   font-size: 12px;
+  ;
+   
+}
+.link--submenuTitle {
+   text-decoration: none;
+   color: #636565;
+   margin-left: 15px;
 }

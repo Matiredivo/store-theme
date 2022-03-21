@@ -1,18 +1,32 @@
+.searchBarContainer{
+  margin-right: 30rem;
+}
 .notificationBarContainer {
   background-color: #e6f1e6;
   color: #03034e;
   font-weight: 700;
-  font-size: 12px;
-  text-decoration: underline;
+  font-size: 14px;
+  letter-spacing: 0.40em;
+  word-spacing: 0.40em;
+  font-family: sans-serif;
+  height: 30px;
+  margin-top: 0px;
 }
-
+.notificationBarInner{
+  padding-bottom: 20px;
+}
+.notificationBarInner--mensaje {
+background-color: #1457cc;
+}
+.notificationContent--mensaje {
+  color: #fff;
+}
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
   background-color: #e6f1e6;
   padding: 0px;
 }
-
 .newsletter {
   background-color: #03054e;
   max-width: 1528px;
@@ -55,10 +69,27 @@
 .buttonContainer {
   padding-top: 0px;
 }
+.imageElement--carrusel{
+  margin-left: 20%;
+}
+.imageElement--carrusel-related{
+  margin-left: 15%;
+}
 
 .imageElement--storePrint {
   max-height: 300px;
   margin-bottom: 20px;
+}
+.imageElement--cace {
+  margin-top: 10px;
+}
+.imageElement--cyber {
+  margin-bottom: 10px;
+  margin-top: -3px;
+  margin-right: 40px;
+}
+.productImageTag--main{
+  max-height: 100px;
 }
 
 .skuSelectorContainer {
@@ -84,14 +115,19 @@
 
   .imageElement--storePrint {
     margin-bottom: 0px;
-    max-height: 600px;
+    
   }
 }
 
 .productImagesContainer--quickview .carouselContainer {
-  justify-content: flex-start;
+  justify-content: flex;  
 }
-
+.productNameContainer--quickview{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
 .productImagesContainer--quickview .productImageTag {
   object-fit: cover !important;
 }
@@ -110,4 +146,68 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+  padding-top: 10px;
 }
+.productBrand--quickview{
+  color:#828282 ;
+  font-size: 20px;
+  font-weight: 700;
+}
+.productDescriptionContainer {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.productDescriptionTitle {
+  padding-left: 1%;
+  color:#2E58CC;
+  font-weight: 700;
+}
+.autoCompleteOuterContainer--search-header{
+  width: 250%;
+  padding-top: 7%;
+}
+.autoCompleteOuterContainer--search-header :global(.vtex-input-prefix__group) {
+  border-radius: 20px;
+}
+.searchBarContainer :global(.vtex-styleguide-9-x-input){
+  background-color: lightgray;
+}
+/*logo desktop */
+.logoLink--logo-desktop{
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+.logoImage--logo-desktop{
+  padding-right: 20px;
+}
+.imageElement--image-fiscal-data{
+  margin-left: 90px;
+  margin-top: 10px;
+}
+.imageElement--powered{
+  padding-top: 10px;
+  margin-right: 40px;
+}
+.imageElement--emozion{
+padding-top: 15px;
+}
+.imageElement--ecom{
+  padding-top: 15px;
+  }
+  .imageElement--vtex{
+    padding-top: 10px;
+    }
+    .searchBarInnerContainer--modal-search-bar :global(.vtex-input__suffix),
+    :global(.vtex-styleguide-9-x-input) {
+      background: transparent;
+    }
+    .searchBarInnerContainer--modal-search-bar
+      :global(.vtex-input-prefix__group) {
+      border: none;
+    }
+  .autoCompleteOuterContainer--modal-search-bar :global(.vtex-input-prefix__group){
+    border: 1px solid #ccc;
+    border-radius: 0;
+    width: 50%;
+  }
+  

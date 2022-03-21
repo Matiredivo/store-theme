@@ -1,0 +1,258 @@
+{
+    "flex-layout.row#site-map": {
+      "title": "Footer Column One",
+      "props": {
+        "blockClass": "footer-border"
+      },
+      "children": [
+        "vtex.menu@2.x:menu#footer-menu"
+      ]
+    },
+  
+    "vtex.menu@2.x:menu#footer-menu":{
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "rich-text#site-map",
+        "flex-layout.row#site-map-columns"
+       // "rich-text#info-tkl"
+      ]
+    },
+  
+    "rich-text#site-map": {
+      "title":"Column Title",
+      "props": {
+        "text": "### MAPA DEL SITIO",
+        "blockClass": "title-column-footer"
+      }
+    },
+  
+    "flex-layout.row#site-map-columns":{
+      "title":"Content Links",
+      "props": {
+        "blockClass":"site-map-columns",
+        "colSizing": "auto"
+      },
+      "children":[
+        "flex-layout.col#column-1",
+        "flex-layout.col#column-2"
+      ]
+    },
+  
+    "flex-layout.col#column-1":{
+      "props": {
+        "preventVerticalStretch": true
+      },
+      "children":[
+        "menu-item#footer-begin",
+        "menu-item#footer-sucursales",
+        "menu-item#footer-employment",
+        "menu-item#footer-contact"
+      ]
+    },
+  
+    "flex-layout.col#column-2":{
+      "props": {
+        "preventVerticalStretch": true
+      },
+      "children":[
+        "menu-item#footer-how-buy",
+        "menu-item#footer-privacy-policies",
+        "menu-item#footer-terms-conditions",
+        "menu-item#footer-nuevo"
+      ]
+    },
+    "menu-item#footer-begin":{
+      "props": {
+        "id": "menu-inicio",
+        "type": "custom",
+        "blockClass": "link-footer",
+        "itemProps": {
+          "type": "internal",
+          "href": "https://www.farmaciastkl.com/",
+          "noFollow": true,
+          "text": "Inicio"
+        }
+      }
+    },
+    "menu-item#footer-sucursales":{
+      "props": {
+        "id": "menu-inicio",
+        "type": "custom",
+        "blockClass": "link-footer",
+        "itemProps": {
+          "type": "internal",
+          "href": "/sucursales",
+          "noFollow": true,
+          "text": "Sucursales"
+        }
+      }
+    },
+    "menu-item#footer-social-work":{
+      "props": {
+        "id": "menu-social-work",
+        "type": "custom",
+        "blockClass": "link-footer",
+        "itemProps": {
+          "type": "internal",
+          "href": "/link",
+          "noFollow": true,
+          "text": "Obras sociales"
+        }
+      }
+    },
+  
+    "menu-item#footer-employment":{
+      "props": {
+        "id": "menu-employment",
+        "type": "custom",
+        "blockClass": "link-footer",
+        "itemProps": {
+          "type": "internal",
+          "href": "/trabaja-con-nosotros",
+          "noFollow": true,
+          "text": "Empleo"
+        }
+      }
+    },
+  
+    /*"menu-item#footer-nuevo":{
+      "props": {
+        "id": "menu-branches",
+        "type": "custom",
+        "blockClass": "link-footer",
+        "itemProps": {
+          "type": "internal",
+          "href": "/sucursales",
+          "noFollow": true,
+          "text": "Sucursales"
+        }
+      }
+    },*/
+  
+    "menu-item#footer-contact":{
+      "props": {
+        "id": "menu-contact",
+        "type": "custom",
+        "blockClass": "link-footer",
+        "itemProps": {
+          "type": "internal",
+          "href": "/contacto",
+          "noFollow": true,
+          "text": "Contacto"
+        }
+      }
+    },
+  
+    "menu-item#footer-how-buy":{
+      "props": {
+        "id": "menu-how-buy",
+        "type": "custom",
+        "blockClass": "link-footer",
+        "itemProps": {
+          "type": "internal",
+          "href": "/comprar-ahora",
+          "noFollow": true,
+          "text": "Cómo comprar"
+        }
+      }
+    },
+  
+    "menu-item#footer-privacy-policies":{
+      "props": {
+        "id": "menu-privacy-policies",
+        "type": "custom",
+        "blockClass": "link-footer",
+        "itemProps": {
+          "type": "internal",
+          "href": "/politica-privacidad",
+          "noFollow": true,
+          "text": "Políticas de privacidad"
+        }
+      }
+    },
+  
+    "menu-item#footer-terms-conditions":{
+      "props": {
+        "id": "menu-terms-conditions",
+        "type": "custom",
+        "blockClass": "link-footer",
+        "itemProps": {
+          "type": "internal",
+          "href": "/terminos-condiciones",
+          "noFollow": true,
+          "text": "Términos y condiciones"
+        }
+      }
+    },
+    "menu-item#footer-nuevo":{
+      "props": {
+        "id": "menu-terms-conditions",
+        "type": "custom",
+        "blockClass": "link-footer1",
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "text": "2"
+        }
+      }
+    },
+    "flex-layout.row#site-map-mobile": {
+        "title": "Footer Column One",
+        "props": {
+          "blockClass": "footer-border"
+        },
+        "children": [
+          "vtex.menu@2.x:menu#footer-menu-mobile"
+        ]
+      },
+    
+      "vtex.menu@2.x:menu#footer-menu-mobile":{
+        "props": {
+          "orientation": "vertical"
+        },
+        "children": [
+          "rich-text#site-map-mobile",
+          "flex-layout.row#site-map-columns-mobile"
+        ]
+      },
+    
+      "rich-text#site-map-mobile": {
+        "title":"Column Title",
+        "props": {
+          "text": "### MAPA DEL SITIO",
+          "blockClass": "title-column-footer"
+        }
+      },
+    
+      "flex-layout.row#site-map-columns-mobile":{
+        "title":"Content Links",
+        "props": {
+          "preserveLayoutOnMobile": "true",
+          "blockClass":"site-map-columns",
+          "colSizing": "auto"
+        },
+        "children":[
+          "flex-layout.col#column-1",
+          "flex-layout.col#column-2"
+        ]
+      },
+      "flex-layout.col#column-1-mobile":{
+        "children":[
+          "menu-item#footer-begin",
+          "menu-item#footer-sucursales",
+          "menu-item#footer-employment",
+          "menu-item#footer-contact"
+        ]
+      },
+    
+      "flex-layout.col#column-2-mobile":{
+        "children":[
+          "menu-item#footer-how-buy",
+          "menu-item#footer-privacy-policies",
+          "menu-item#footer-terms-conditions"
+        ]
+      }
+   }

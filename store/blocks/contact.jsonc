@@ -1,85 +1,164 @@
 {
-  "store.custom#contact-us": {
-    "children": [
-      "flex-layout.row#contact-us"
-    ]
-  },
-
-  "flex-layout.row#contact-us": {
-    "props": {
-      "blockClass": "contact"
-    },
-    "children": [
-      "flex-layout.col#contact-us"
-    ]
-  },
-
-  "flex-layout.col#contact-us": {
-    "children": [
-      "rich-text#contact-us",
-      "form#contact-us"
-    ]
-  },
-  "rich-text#contact-us": {
-    "props": {
-      "text": "## Contact Us"
-    }
-  },
-
-  "form#contact-us": {
-    "props": {
-      "entity": "contact",
-      "schema": "site-contact"
-    },
+  "store.custom#contacto": {
     "blocks": [
-      "form-success#contact-us"
-    ],
-    "children": [
-      "form-input.text#title",
-      "form-input.text#name",
-      "form-input.text#email",
-      "form-input.textarea#message",
-      "form-submit#contact"
+      "flex-layout.row#contact-with",
+      "flex-layout.row#contacto",
+      "flex-layout.row#contact-form"
     ]
   },
 
-  "form-success#contact-us": {
+  "flex-layout.row#contact-with": {
+      "props":{
+        "blockClass": "content-work"
+      },
+      "children": [
+        "rich-text#contact-titulo"
+       // "flex-layout.row#contact-text-trabajo",
+        //"flex-layout.col#contact-text-trabajo",
+        //"flex-layout.row#contact-form"
+      ]
+  },
+  "rich-text#contact-titulo": {
+      "props": {
+        "text": "CONTACTANOS",
+        "blockClass": "title-General"
+      }
+  },
+  "flex-layout.row#contacto": {
+    "props":{
+      "blockClass": "content-work"
+    },
     "children": [
-      "rich-text#success-submit"
+      "flex-layout.col#contact-text-trabajo"
+    ]
+},
+  "flex-layout.col#contact-text-trabajo":{
+      "props":{
+          "blockClass": "content-DSC-politica"
+      },
+      "children": [
+      "rich-text#contact-title",
+      "rich-text#contact-desc"
     ]
   },
-  "rich-text#success-submit": {
-    "props": {
-      "text": "Thanks for reaching out! We will come back shortly.",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
+
+  "rich-text#contact-title": {
+      "props": {
+        "text": "CONTACTANOS",
+        "blockClass": "title-trabajo"
+      }
   },
 
-  "form-input.text#title": {
-    "props": {
-      "pointer": "#/properties/title"
-    }
-  },
-  "form-input.text#name": {
-    "props": {
-      "pointer": "#/properties/name"
-    }
-  },
-  "form-input.text#email": {
-    "props": {
-      "pointer": "#/properties/email"
-    }
-  },
-  "form-input.textarea#message": {
-    "props": {
-      "pointer": "#/properties/message"
-    }
+  "rich-text#contact-desc": {
+      "props": {
+        "text": "Podés enviarnos cualquier duda o consulta. Nos caracterizamos por una exclusiva atención al público, por lo que tu opinión nos importa.",
+        "blockClass": "desc-trabajo"
+      }
   },
 
-  "form-submit#contact": {
-    "props": {
-      "label": "Submit"
+  "flex-layout.row#contact-form": {
+    "props":{
+      "blockClass": "work"
+    },
+      "children": [
+        "flex-layout.col#contact-form"
+      ]
+    },
+    "flex-layout.col#contact-form": {
+      "props":{
+        "blockClass": "content-form"
+      },
+      "children": [
+        "form#contact-frm"
+      ]
+    },
+
+    "flex-layout.row#contact-name-mail": {
+      "props": {
+        "blockClass": "files-name-mail"
+      },
+      "children": [
+        "form-input.text#contact-name",
+        "form-input.text#contact-mail"
+      ]
+    },
+
+    "flex-layout.row#contact-phone-curriculum": {
+      "props": {
+        "blockClass": "files-phone-curriculum"
+      },
+      "children": [
+        "form-input.text#contact-phone",
+        "form-input.dropdown#contact-branchOffice"
+      ]
+    },
+
+    "flex-layout.row#contact-comments": {
+      "props": {
+        "blockClass": "file-comments"
+      },
+      "children": [
+        "form-input.text#contact-comments"
+      ]
+    },
+    "form#contact-frm": {
+      "props": {
+        "entity": "CO",
+        "schema": "contacto"
+      },
+      "children": [
+        "flex-layout.row#contact-name-mail",
+        "flex-layout.row#contact-phone-curriculum",
+        "flex-layout.row#contact-comments",
+        "form-submit#contact-submit"
+      ],
+      "blocks": ["form-success#contact-success"]
+    },
+    "form-input.dropdown#contact-branchOffice": {
+      "props": {
+          "pointer": "#/properties/branchOffice"
+      }
+    },
+    "form-success#contact-success": {
+      "children": [
+        "rich-text#contact-successSubmit"
+      ]
+    },
+    "rich-text#contact-successSubmit": {
+      "props": {
+        "placeholder": "Nombre completo",
+        "text": "Succesfully submitted the data!",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+    "form-input.text#contact-name": {
+      "props": {
+       
+        "pointer": "#/properties/fullname"
+      }
+    },
+    "form-input.text#contact-mail": {
+      "props": {
+        
+        "pointer": "#/properties/email"
+      }
+    },
+    "form-input.text#contact-phone": {
+      "props": {
+       
+        "pointer": "#/properties/telephone"
+      }
+    },
+    "form-input.text#contact-comments": {
+      "props": {
+       
+        "pointer": "#/properties/comments"
+      }
+    },
+    "form-submit#contact-submit": {
+      "props": {
+        "label": "Enviar"
+      }
     }
-  }
 }

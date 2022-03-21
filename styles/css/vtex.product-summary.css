@@ -16,27 +16,72 @@
     display: none;
   }
 }
-
 .nameContainer {
-  justify-content: start;
+  padding-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  margin-left: 1rem;
+}
+.productNameContainer {
+  min-height: 50px;
+}
+.nameContainer--namemobile {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-left: 1rem;
 }
-
 .brandName {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 12px;
   color: #2E2E2E;
 }
 
-.container {
-  text-align: start;
-}
+
 
 .imageContainer {
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
+  margin-top: 18%;
   border-radius: 0.25rem;
+  padding-left: 20px;
 }
+.element{
+  background-color: #ffffff;
+  text-align: left;
+}
+.element--{
+  background-color: #ffffff;
+  text-align: left;
+}
+.productBrandContainer--brand{
+  color: #2E2E2E;
+  margin-top: 0.5rem;
+  text-align: left;
+  min-height: 20px;
+  }
+  .productBrandContainer--brandmobile{
+    margin-top: 2rem;
+    text-align: left;
+    }
+  .productBrandName{
+   font-family:'FFMarkProBlack.ttf';
+    font-size: 22px;
+    font-weight:900;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  .element :global(.vtex-product-summary-2-x-imageContainer) :global(.vtex-store-components-3-x-discountInsideContainer){
+    right: 0px;
+    top: -2px;
+    width: 65px;
+    height: 40px;
+    background-color: #FE8400;
+     border-radius: 0%;
+     padding-top: 9px;
+     font-size: 20px;
+     font-weight: 600;
+     
+}
+  

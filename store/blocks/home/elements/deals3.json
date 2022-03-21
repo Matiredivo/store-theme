@@ -1,0 +1,47 @@
+{"flex-layout.row#mdeals3": {
+    "children": [
+      "flex-layout.col#mdeals7",
+      "flex-layout.col#mdeals8"
+    ],
+    "props": {
+      "blockClass": "mdeals"
+    }
+  },
+
+  "flex-layout.col#mdeals7": {
+    "props": {
+      "width": "28%"
+    },
+    "children": [
+      "image#mdeal7"
+    ]
+  },
+  "image#mdeal7": {
+    "props": {
+      "src": "assets/deals/Perfumesmobile.jpg",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/perfumes---fragancias"
+      },
+      "height":50,
+      "width":180
+     }
+  },
+  "flex-layout.col#mdeals8": {
+    "props": {
+      "width": "28%"
+    },
+    "children": [
+      "image#mdeal8"
+          ]
+  },
+  "image#mdeal8": {
+    "props": {
+      "src": "assets/deals/Solaresmobile.jpg",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/dermocosmetica/solares"
+      },
+      "height":50,
+      "width":180
+       } 
+    }
+  }

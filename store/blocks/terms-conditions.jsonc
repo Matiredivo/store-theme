@@ -1,0 +1,215 @@
+{
+  "store.custom#terminos-condiciones": {
+    "blocks": [
+      "flex-layout.row#terminos-condiciones",
+      "flex-layout.row#terminos"
+    ]
+  },
+
+  "flex-layout.row#terminos-condiciones": {
+    "props":{
+      "blockClass": "como-comprar"
+    },
+    "children": [
+      "flex-layout.col#titulo-condiciones"
+    ]
+  },
+  "flex-layout.col#titulo-condiciones":{
+    "props":{
+      "blockClass": "como-comprar"
+    },
+  "children": [
+    "rich-text#Titulo-cond"
+  ]
+},
+  "rich-text#Titulo-cond": {
+    "props": {
+      "text": "TÉRMINOS Y CONDICIONES",
+      "blockClass": "title-General"
+    }
+  },
+  "flex-layout.row#terminos":{
+    "props":{
+      "blockClass": "como-comprar"
+    },
+  "children": [
+    "flex-layout.col#text-condiciones"
+  ]
+},
+  "flex-layout.col#text-condiciones":{
+    "props": {
+      "blockClass": "como-comprar"
+    },
+    "children": [
+      "rich-text#Titulo-condiciones",
+      "flex-layout.col#list-condiciones",
+      "rich-text#Titulo-condiciones1",
+      "flex-layout.col#list-condiciones1",
+      "rich-text#Titulo-condiciones2",
+      "flex-layout.col#list-condiciones2",
+      "rich-text#Titulo-condiciones3",
+      "flex-layout.col#list-condiciones3",
+      "rich-text#Titulo-condiciones4",
+      "flex-layout.col#list-condiciones4",
+      "rich-text#Titulo-condiciones5",
+      "flex-layout.col#list-condiciones5",
+      "rich-text#Titulo-condiciones6",
+      "flex-layout.col#list-condiciones6",
+      "rich-text#Titulo-condiciones7",
+      "flex-layout.col#list-condiciones7"
+    ]
+  },
+
+  "rich-text#Titulo-condiciones": {
+    "props": {
+      "text": "CONDICIONES GENERALES",
+      "blockClass": "titles-buy"
+    }
+  },
+
+  "flex-layout.col#list-condiciones":{
+      "children": [
+        "rich-text#List-1T"
+      ]
+  },
+
+  "rich-text#List-1T": {
+      "props": {
+        "text": "A continuación se enumeran los términos y condiciones que rigen en la utilización del sitio www.farmaciastkl.com.ar , (de ahora en adelante el “Sitio”), perteneciente a Tekiel SRL.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#Titulo-condiciones1": {
+    "props": {
+      "text": "ACEPTACIÓN DE TERMINOS Y CONDICIONES",
+      "blockClass": "titles-buy"
+    }
+  },
+
+  "flex-layout.col#list-condiciones1":{
+      "children": [
+        "rich-text#List-1-1T"
+      ]
+  },
+
+  "rich-text#List-1-1T": {
+      "props": {
+        "text": "Los usuarios que accedan y utilicen los servicios del Sitio declaran conocer y aceptar los presentes Términos y Condiciones. Todas las visitas y acciones que se realicen en www.farmaciastkl.com quedarán regidas por las reglas aquí enunciadas y a la legislación aplicable en la República Argentina. De no estar de acuerdo con los Términos y Condiciones, el usuario deberá abstenerse de utilizar el presente Sitio y/o los servicios por él ofrecidos. Los Términos y Condiciones podrán ser modificados a exclusivo criterio de Tekiel SRL, en cualquier momento y sin previo aviso. Las modificaciones entrarán en vigencia automáticamente en el momento de la publicación en el presente Sitio.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#Titulo-condiciones2": {
+    "props": {
+      "text": "USO Y REGISTRO",
+      "blockClass": "titles-buy"
+    }
+  },
+
+  "flex-layout.col#list-condiciones2":{
+      "children": [
+        "rich-text#List-2T"
+      ]
+  },
+
+  "rich-text#List-2T": {
+      "props": {
+        "text": "La navegación por el sitio es libre, pero solo pueden realizar transacciones comerciales quienes cumplan con los requisitos legales para hacerlo, a partir de los 18 años. La responsabilidad derivada por los servicios a los que acceden quienes no hayan alcanzado la mayoría de edad, corresponderá a los mayores a cuyo cargo se encuentren. El Sitio prevé la opción de registrarse. Los usuarios que deseen hacerlo deben ser mayores de edad, aceptar los Términos y Condiciones y completar los campos requeridos para el registro con datos veraces, además de una contraseña válida. Los usuarios registrados se comprometen a mantener sus datos actualizados, a fin de posibilitar el correcto uso del sitio, además de mantener la confidencialidad de su usuario y contraseña. Tekiel SRL no se responsabiliza por la veracidad de los datos proporcionados por los usuarios. Tekiel SRL se reserva el derecho de aceptar, rechazar solicitudes y suspender temporal o definitivamente a los usuarios en caso de incumplimiento de los términos y condiciones.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#Titulo-condiciones3": {
+    "props": {
+      "text": "COMPRA",
+      "blockClass": "titles-buy"
+    }
+  },
+
+  "flex-layout.col#list-condiciones3":{
+      "children": [
+        "rich-text#List-3T"
+      ]
+  },
+
+  "rich-text#List-3T": {
+      "props": {
+        "text": "La compra de los productos ofrecidos en el Sitio está sujeta a la disponibilidad de stock y a la validación de la transacción.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#Titulo-condiciones4": {
+    "props": {
+      "text": "PRECIOS",
+      "blockClass": "titles-buy"
+    }
+  },
+
+  "flex-layout.col#list-condiciones4":{
+      "children": [
+        "rich-text#List-4T"
+      ]
+  },
+
+  "rich-text#List-4T": {
+      "props": {
+        "text": "Los precios están expresados en Pesos Argentinos, e incluyen IVA.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#Titulo-condiciones5": {
+    "props": {
+      "text": "MODIFICACIONES",
+      "blockClass": "titles-buy"
+    }
+  },
+
+  "flex-layout.col#list-condiciones5":{
+      "children": [
+        "rich-text#List-5T"
+      ]
+  },
+
+  "rich-text#List-5T": {
+      "props": {
+        "text": "Tekiel SRL se reserva el derecho de modificar los precios de sus productos con motivo de promociones. Dichas modificaciones entrarán en vigencia en el momento de su publicación en el Sitio hasta la fecha de finalización expresada o modificación, lo que ocurra primero.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#Titulo-condiciones6": {
+    "props": {
+      "text": "FORMA DE PAGO",
+      "blockClass": "titles-buy"
+    }
+  },
+
+  "flex-layout.col#list-condiciones6":{
+      "children": [
+        "rich-text#List-6T"
+      ]
+  },
+
+  "rich-text#List-6T": {
+      "props": {
+        "text": "Una vez elegidos los productos el usuario clickeará “Finalizar compra” y accederá a la lista de productos seleccionados, el precio de cada uno y el precio final. Al confirmar la compra accederá a completar sus datos y a efectuar el pago. El mismo se realiza a través de Mercado Pago. Todo el proceso de pago se efectuará en un servidor SSL altamente seguro proporcionado por Mercado Pago. Tekiel SRL no almacenará ningún dato de tarjeta de crédito del usuario.",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#Titulo-condiciones7": {
+    "props": {
+      "text": "JURISDICCIÓN. LEY APLICABLE",
+      "blockClass": "titles-buy"
+    }
+  },
+
+  "flex-layout.col#list-condiciones7":{
+      "children": [
+        "rich-text#List-7T"
+      ]
+  },
+
+  "rich-text#List-7T": {
+      "props": {
+        "text": "Este acuerdo estará regido en todos sus puntos por las leyes y demás normas jurídicas vigentes en la República Argentina.",
+        "blockClass": "list-buy"
+      }
+  }
+}

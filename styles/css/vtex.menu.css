@@ -1,0 +1,55 @@
+.styledLinkContent {
+    font-size: 11.5px;
+    font-weight:bold;
+}
+.menuContainer{
+    justify-content: center;
+}
+.menuContainer--menu{
+    background-color:#dcdcdc;
+}
+.styledLinkContent--link-footer {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color      : #636463  ;
+        font-size  : 17px;
+       font-weight: 500;
+       line-height: 18px;
+       display    : flex;
+       align-items: center;
+       gap        : 5px;
+  }
+  .styledLinkContent--link-footer1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color      : #ffff;
+    font-size  : 17px;
+   font-weight: 500;
+   line-height: 18px;
+   display    : flex;
+   align-items: center;
+   gap        : 5px;
+}
+  .styledLinkContent--menu-mobile {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color      : #636463  ;
+    font-size  : 20px;
+   font-weight: 800;
+}
+.styledLinkContent--ofertas-mobile {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color      : #f7941d  ;
+    font-size  : 17px;
+   
+}
+.styledLinkContent--header-menu-item-mobile{
+    font-size: 15px;
+    }
+
+.menuItem--menu{
+    background-color: #dcdcdc;
+}
+.menuItem--menu-isClosed{
+    background-color: #dcdcdc;
+}
+.submenuWrapper--isOpen{
+    background-color: #dcdcdc;
+}

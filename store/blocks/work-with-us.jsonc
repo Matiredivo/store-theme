@@ -1,0 +1,168 @@
+{
+    "store.custom#trabaja-con-nosotros": {
+      "blocks": [
+        "flex-layout.row#work-with",
+        "flex-layout.row#work-with1",
+        "flex-layout.row#work-with2"
+      ]
+    },
+
+    "flex-layout.row#work-with": {
+        "props":{
+          "blockClass": "content-work"
+        },
+        "children": [
+          "rich-text#Titulo-work"
+          //"flex-layout.col#text-trabajo",
+          //"flex-layout.row#form"
+        ]
+    },
+    "rich-text#Titulo-work": {
+        "props": {
+          "text": "TRABAJÁ CON NOSOTROS",
+          "blockClass": "title-General"
+        }
+    },
+    "flex-layout.row#work-with1": {
+      "props":{
+        "blockClass": "content-work"
+      },
+      "children": [
+        "flex-layout.col#text-trabajo"
+      ]
+    },
+    "flex-layout.col#text-trabajo":{
+        "props":{
+            "blockClass": "content-DSC-politica"
+        },
+        "children": [
+        "rich-text#title-trabajo",
+        "rich-text#Desc-trabajo"
+      ]
+    },
+
+    "rich-text#title-trabajo": {
+        "props": {
+          "text": "TRABAJÁ CON NOSOTROS",
+          "blockClass": "title-trabajo"
+        }
+    },
+
+    "rich-text#Desc-trabajo": {
+        "props": {
+          "text": "En TKL nos encontramos en constante evolución, por eso siempre estamos en la búsqueda de personas con ganas de trabajar con nosotros.",
+          "blockClass": "desc-trabajo"
+        }
+    },
+    "flex-layout.row#work-with2": {
+      "props":{
+        "blockClass": "contentwork"
+      },
+      "children": [
+        "flex-layout.row#form"
+      ]
+    },
+    "flex-layout.row#form": {
+        "children": [
+          "flex-layout.col#form"
+        ]
+      },
+      "flex-layout.col#form": {
+        "props":{
+          "blockClass": "content-form"
+        },
+        "children": [
+          "form"
+        ]
+      },
+
+      "flex-layout.row#name-mail": {
+        "props": {
+          "blockClass": "files-name-mail"
+        },
+        "children": [
+          "form-input.text#name",
+          "form-input.text#mail"
+        ]
+      },
+
+      "flex-layout.row#phone-curriculum": {
+        "props": {
+          "blockClass": "files-phone-curriculum"
+        },
+        "children": [
+          "form-input.text#phone",
+          "form-input.upload#curriculum"
+        ]
+      },
+
+      "flex-layout.row#comments": {
+        "props": {
+          "blockClass": "file-comments"
+        },
+        "children": [
+          "form-input.text#comments"
+        ]
+      },
+      "form": {
+        "props": {
+          "entity": "TN",
+          "schema": "nosotros"
+        },
+        "children": [
+          "flex-layout.row#name-mail",
+          "flex-layout.row#phone-curriculum",
+          "flex-layout.row#comments",
+          "form-submit"
+        ],
+        "blocks": ["form-success"]
+      },
+      "form-input.upload#curriculum": {
+        "props": {
+            "pointer": "#/properties/curriculum",
+            "text":"Adjunta tu currículum",
+            "blockClass": "file-upload"
+        }
+      },
+      "form-success": {
+        "children": [
+          "rich-text#successSubmit"
+        ]
+      },
+      "rich-text#successSubmit": {
+        "props": {
+          "placeholder": "Nombre completo",
+          "text": "Succesfully submitted the data!",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+      "form-input.text#name": {
+        "props": {
+          
+          "pointer": "#/properties/name"
+        }
+      },
+      "form-input.text#mail": {
+        "props": {
+        
+          "pointer": "#/properties/mail"
+        }
+      },
+      "form-input.text#phone": {
+        "props": {
+          "pointer": "#/properties/phone"
+        }
+      },
+      "form-input.text#comments": {
+        "props": {
+          "pointer": "#/properties/comments"
+        }
+      },
+      "form-submit": {
+        "props": {
+          "label": "Enviar"
+        }
+      }
+}
+

@@ -1,0 +1,345 @@
+
+{
+  "flex-layout.row#productos": {
+  "props": {
+    "blockClass": "productos"
+  },
+  "children": ["image#imgshelf1", 
+    "flex-layout.row#shelf-cyber"]
+  },
+"flex-layout.row#imgshelf2": {
+  "children": ["image#imgshelf2" , "flex-layout.row#shelf-piel"],
+  "props": {
+    "blockClass": "productos"
+  }
+},
+"flex-layout.row#imgshelf3": {
+  "children": ["image#imgshelf3", "flex-layout.row#shelf-personal"],
+  "props": {
+    "blockClass": "productos"
+  }
+},
+"flex-layout.row#imgshelf4": {
+  "children": ["image#imgshelf4", "flex-layout.row#shelf4"],
+  "props": {
+    "blockClass": "productos"
+  }
+},
+"flex-layout.row#imgshelf5": {
+  "children": ["image#imgshelf5", "flex-layout.row#shelf5"],
+  "props": {
+    "blockClass": "productos"
+  }
+},
+"image#imgshelf1": {
+  "title": "Imimgshelfage",
+  "props": {
+    "blockClass": "carrusel",
+    "height": 450,
+    "width": 250,
+    "src": "assets/carruseles/Ofertas.png",
+    "link": {
+      "url" : "https://www.farmaciastkl.com/139?map=productClusterIds&order=OrderByBestDiscountDESC"
+    }
+  }
+},
+"image#imgshelf2": {
+  "title": "Imimgshelfage",
+  "props": {
+    "blockClass": "carrusel",
+    "height": 450,
+    "width": 250,
+    "src": "assets/carruseles/vichy-lrp.jpeg",
+    "link": {
+      "url" : "https://www.farmaciastkl.com/145?map=productClusterIds&order=OrderByBestDiscountDESC"
+    }
+  }
+},
+"image#imgshelf3": {
+  "title": "imgshelf",
+  "props": {
+    "blockClass": "carrusel",
+    "height": 450,
+    "width": 250,
+    "src": "assets/carruseles/Eucerin.jpeg",
+    "link": {
+      "url" : "https://www.farmaciastkl.com/146?map=productClusterIds&order=OrderByBestDiscountDESC"
+    }
+  }
+},
+"image#imgshelf4": {
+  "title": "imgshelf",
+  "props": {
+    "blockClass": "carrusel",
+    "height": 450,
+    "width": 250,
+    "src": "assets/carruseles/Cuidadodelapiel.png",
+    "link": {
+      "url" : "https://www.farmaciastkl.com/137?map=productClusterIds&order=OrderByBestDiscountDESC"
+    }
+  }
+},
+"image#imgshelf5": {
+  "title": "imgshelf",
+  "props": {
+    "blockClass": "carrusel",
+    "height": 450,
+    "width": 250,
+    "src": "assets/carruseles/Cuidadopersonal.png",
+    "link": {
+      "url" : "https://www.farmaciastkl.com/138?map=productClusterIds&order=OrderByBestDiscountDESC"
+    }
+  }
+},
+"image#imgshelf": {
+  "title": "imgshelf",
+  "props": {
+    "blockClass": "carrusel",
+    "height": 450,
+    "width": 250,
+    "src": "assets/banners/cuidado1.jpg",
+    "link": {
+      "url" : "/busca?fq=H:139"
+    }
+  }
+},
+ "flex-layout.row#shelf-cyber": {
+    "title": "Container Slider Shelf" ,
+    "props": {
+      "blockClass": "product-summary"
+    },
+    "children": ["list-context.product-list#shelf-ofertas-cyber"]
+  },
+
+  "list-context.product-list#shelf-ofertas-cyber": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-home"],
+    "props": {
+      "collection": "139",
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass":"shelf"
+    }
+  },
+
+  "flex-layout.row#shelf-piel": {
+    "title": "Container Slider Shelf",
+    "props": {
+      "blockClass": "product-summary"
+    },
+    "children": ["list-context.product-list#shelf-cuidado-piel"]
+  },
+
+  "list-context.product-list#shelf-cuidado-piel": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-home"],
+    "props": {
+      "collection": "145",
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass":"shelf"
+    }
+  },
+
+  "flex-layout.row#shelf-personal": {
+    "title": "Container Slider Shelf",
+    "props": {
+      "blockClass": "product-summary"
+    },
+    "children": ["list-context.product-list#shelf-cuidado-personal"]
+  },
+
+  "list-context.product-list#shelf-cuidado-personal": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-home"],
+    "props": {
+      "collection": "146",
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass":"shelf"
+    }
+  },
+  "flex-layout.row#shelf4": {
+    "title": "Container Slider Shelf",
+    "props": {
+      "blockClass": "product-summary"
+    },
+    "children": ["list-context.product-list#shelf4"]
+  },
+
+  "list-context.product-list#shelf4": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-home"],
+    "props": {
+      "collection": "137",
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass":"shelf"
+    }
+  },
+  "flex-layout.row#shelf5": {
+    "title": "Container Slider Shelf",
+    "props": {
+      "blockClass": "product-summary"
+    },
+    "children": ["list-context.product-list#shelf5"]
+  },
+
+  "list-context.product-list#shelf5": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-home"],
+    "props": {
+      "collection": "138",
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass":"shelf"
+    }
+  },
+  //Mobile
+  "flex-layout.row#mproductos": {
+    "props": {
+      "blockClass": "mproductos"
+    },
+    "children": [ 
+      "flex-layout.row#mshelf-cyber"]
+    },
+  "flex-layout.row#mimgshelf2": {
+    "children": ["flex-layout.row#mshelf-piel"],
+    "props": {
+      "blockClass": "mproductos"
+    }
+  },
+  "flex-layout.row#mimgshelf3": {
+    "children": ["flex-layout.row#mshelf-personal"],
+    "props": {
+      "blockClass": "mproductos"
+    }
+  },
+  "flex-layout.row#mimgshelf4": {
+    "children": ["flex-layout.row#mshelf4"],
+    "props": {
+      "blockClass": "mproductos"
+    }
+  },
+  "flex-layout.row#mimgshelf5": {
+    "children": ["flex-layout.row#mshelf5"],
+    "props": {
+      "blockClass": "mproductos"
+    }
+  },
+  
+   "flex-layout.row#mshelf-cyber": {
+      "title": "Container Slider Shelf",
+      "props": {
+        "blockClass": "mproduct-summary"
+      },
+      "children": ["list-context.product-list#mshelf-ofertas-cyber"]
+    },
+  
+    "list-context.product-list#mshelf-ofertas-cyber": {
+      "blocks": ["product-summary.shelf#mobile"],
+      "children": ["slider-layout#mshelf-home"],
+      "props": {
+        "collection": "139",
+        "orderBy": "OrderByTopSaleDESC",
+        "blockClass":"shelf"
+      }
+    },
+  
+    "flex-layout.row#mshelf-piel": {
+      "title": "Container Slider Shelf",
+      "props": {
+        "blockClass": "mproduct-summary"
+      },
+      "children": ["list-context.product-list#mshelf-cuidado-piel"]
+    },
+  
+    "list-context.product-list#mshelf-cuidado-piel": {
+      "blocks": ["product-summary.shelf#mobile"],
+      "children": ["slider-layout#mshelf-home"],
+      "props": {
+        "collection": "145",
+        "orderBy": "OrderByTopSaleDESC",
+        "blockClass":"shelf"
+      }
+    },
+  
+    "flex-layout.row#mshelf-personal": {
+      "title": "Container Slider Shelf",
+      "props": {
+        "blockClass": "mproduct-summary"
+      },
+      "children": ["list-context.product-list#mshelf-cuidado-personal"]
+    },
+  
+    "list-context.product-list#mshelf-cuidado-personal": {
+      "blocks": ["product-summary.shelf#mobile"],
+      "children": ["slider-layout#mshelf-home"],
+      "props": {
+        "collection": "146",
+        "orderBy": "OrderByTopSaleDESC",
+        "blockClass":"shelf"
+      }
+    },
+    "flex-layout.row#mshelf4": {
+      "title": "Container Slider Shelf",
+      "props": {
+        "blockClass": "mproduct-summary"
+      },
+      "children": ["list-context.product-list#shelf4"]
+    },
+  
+    "list-context.product-list#mshelf4": {
+      "blocks": ["product-summary.shelf#mobile"],
+      "children": ["slider-layout#mshelf-home"],
+      "props": {
+        "collection": "137",
+        "orderBy": "OrderByTopSaleDESC",
+        "blockClass":"shelf"
+      }
+    },
+    "flex-layout.row#mshelf5": {
+      "title": "Container Slider Shelf",
+      "props": {
+        "blockClass": "mproduct-summary"
+      },
+      "children": ["list-context.product-list#mshelf5"]
+    },
+  
+    "list-context.product-list#mshelf5": {
+      "blocks": ["product-summary.shelf#mobile"],
+      "children": ["slider-layout#mshelf-home"],
+      "props": {
+        "collection": "137",
+        "orderBy": "OrderByTopSaleDESC",
+        "blockClass":"shelf"
+      }
+    },
+  "slider-layout#shelf-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "autoplay": {
+        "timeout": 4500
+      }
+    }
+  },
+  "slider-layout#mshelf-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "mshelf",
+      "showPaginationDots": "never",
+      "autoplay": {
+        "timeout": 4500
+      }
+    }
+  }
+  }

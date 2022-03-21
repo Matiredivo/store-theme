@@ -1,0 +1,80 @@
+{
+  "flex-layout.row#desc1": {
+    "children": [
+      "flex-layout.col#desc3",
+      "flex-layout.col#desc4"
+    ],
+    "props": {
+      "blockClass": "desc",
+      "colSizing":"equal"
+    }
+  },
+  "flex-layout.col#desc3": {
+    "props": {
+      "blockClass": "desc",
+      "width": "40%"
+    },
+    "children": [
+      "image#desc3"
+    ]
+  },
+  "image#desc3": {
+    "props": {
+      "blockClass": "desc",
+      "src": "assets/descuentos/Eucerin.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/eucerin/dermocosmetica/solares?_q=eucerin&initialMap=ft&initialQuery=eucerin&map=ft&order=OrderByBestDiscountDESC"
+      },
+      "height": "100px",
+      "width": "450px"
+    	    }
+  },
+  "flex-layout.col#desc4": {
+    "props": {
+      "blockClass": "desc",
+      "width": "40%"
+    },
+    "children": [
+      "image#desc4"
+    ]
+  },
+  "image#desc4": {
+    "props": {
+      "blockClass": "desc",
+      "src": "assets/descuentos/Isdin.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/139/isdin?initialMap=productClusterIds&initialQuery=139&map=productClusterIds,b&order=OrderByBestDiscountDESC"
+      },
+      "height": "100px",
+      "width": "450px"
+    	    }
+  },
+  "flex-layout.row#mdesc1": {
+    "children": [
+      "flex-layout.col#mdesc3"
+    ],
+    "props": {
+      "blockClass": "mdesc",
+      "colSizing":"equal"
+    }
+  },
+  "flex-layout.col#mdesc3": {
+    "props": {
+      "blockClass": "mdesc"
+    },
+    "children": [
+      "image#mdesc3"
+    ]
+  },
+  "image#mdesc3": {
+    "props": {
+      "blockClass": "mdesc",
+      "src": "assets/descuentos/Vichymobile.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/vichy?_q=vichy&map=ft&order=OrderByBestDiscountDESC"
+      },
+      "height": "100px",
+      "width": "450px"
+    	    }
+  }
+}

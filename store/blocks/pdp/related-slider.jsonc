@@ -1,0 +1,203 @@
+{
+    "flex-layout.row#shelf-title-related":{
+    "children":["rich-text#shelf-title-related", "rich-text#shelf-title-relatedd"]
+  },
+    "rich-text#shelf-title-related": {
+        "props": {
+            "text": "## Quizás te pueda interesar",
+            "blockClass": "shelfTitle"
+          }
+    },
+    "rich-text#shelf-title-relatedd": {
+        "props": {
+          "text": "## Ver todo",
+          "blockClass": "shelfTitle1"
+        }
+      },
+    "flex-layout.row#shelf-related": {
+        "props": {
+          "horizontalAlign":"CENTER",
+          "blockClass": "productos-related"
+        },
+        "children": [//"image#related", 
+          "flex-layout.col#related"]
+        },
+        "image#related": {
+            "title": "Imimgshelfage",
+            "props": {
+              "blockClass": "carrusel",
+              "height": 500,
+              "width": 250,
+              "src": "assets/banners/cuidado1.jpg",
+              "link": {
+                "url" : "#"
+              }
+            }
+          },
+          "flex-layout.col#related": {
+            "title": "Container Slider Shelf",
+            "props": {
+              "blockClass": "product-summary"
+            },
+            "children": ["list-context.product-list#shelf-related"]
+          },
+        
+          "list-context.product-list#shelf-related": {
+            "blocks": ["product-summary.shelf"],
+            "children": ["slider-layout#shelf-home1"],
+            "props": {
+              "orderBy": "OrderByTopSaleDESC",
+              "blockClass":"shelf"
+            }
+          },
+          "flex-layout.row#shelf-title-related1":{
+            "children":["rich-text#shelf-title-related1", "rich-text#shelf-title-relatedd1"]
+          },
+            "rich-text#shelf-title-related1": {
+                "props": {
+                    "text": "## Completá tu compra",
+                    "blockClass": "shelfTitle"
+                  }
+            },
+            "rich-text#shelf-title-relatedd1": {
+                "props": {
+                  "text": "## Ver todo <hr/>",
+                  "blockClass": "shelfTitle1"
+                }
+              },
+          "flex-layout.row#shelf-related1": {
+              "props": {
+                "blockClass": "productos-related"
+              },
+              "children": [//"image#related1", 
+                "flex-layout.col#related1"]
+              },
+              "image#related1": {
+                  "title": "Imimgshelfage",
+                  "props": {
+                    "blockClass": "carrusel",
+                    "height": 500,
+                    "width": 250,
+                    "src": "assets/banners/cuidado1.jpg",
+                    "link": {
+                      "url" : "#"
+                    }
+                  }
+                },
+                "flex-layout.col#related1": {
+                  "title": "Container Slider Shelf",
+                  "props": {
+                    "blockClass": "product-summary"
+                  },
+                  "children": ["list-context.product-list#shelf-related1"]
+                },
+              
+                "list-context.product-list#shelf-related1": {
+                  "blocks": ["product-summary.shelf"],
+                  "children": ["slider-layout#shelf-home1"],
+                  "props": {
+                    "orderBy": "OrderByPriceDESC",
+                    "blockClass":"shelf"
+                  }
+                },
+                "slider-layout#shelf-home1": {
+                  "props": {
+                    "itemsPerPage": {
+                      "desktop": 4,
+                      "tablet": 3,
+                      "phone": 1
+                    },
+                    "infinite": true,
+                    "fullWidth": false,
+                    "blockClass": "shelf",
+                    "showPaginationDots": "never",
+                    "autoplay": {
+                      "timeout": 4500
+                    }
+                  }
+                },
+        //MOBILE
+        "flex-layout.row#shelf-title-related-mobile":{
+          "children":["rich-text#shelf-title-related-mobile"]
+        },
+          "rich-text#shelf-title-related-mobile": {
+              "props": {
+                  "text": "## Quizás te pueda interesar",
+                  "blockClass": "mshelfTitle"
+                }
+          },      
+          "flex-layout.row#shelf-title-related-mobile1":{
+            "children":["rich-text#shelf-title-related-mobile1"]
+          },
+            "rich-text#shelf-title-related-mobile1": {
+                "props": {
+                    "text": "## Completá tu compra",
+                    "blockClass": "mshelfTitle"
+                  }
+            } ,
+            "flex-layout.row#shelf-related-mobile": {
+              "props": {
+                "blockClass": "mproductos"
+              },
+              "children": [ "flex-layout.row#related-mobile"]
+              },
+              
+                "flex-layout.row#related-mobile": {
+                  "title": "Container Slider Shelf",
+                  "props": {
+                    "blockClass": "mproduct-summary-mobile"
+                  },
+                  "children": ["list-context.product-list#shelf-relatedm"]
+                },
+              
+                "list-context.product-list#shelf-relatedm": {
+                  "blocks": ["product-summary.shelf"],
+                  "children": ["slider-layout#shelf-pdp-mobile"],
+                  "props": {
+                    "orderBy": "OrderByTopSaleDESC",
+                    "blockClass":"mshelf"
+                  }
+                },
+                "flex-layout.row#shelf-related-mobile1": {
+                  "props": {
+                    "blockClass": "mproductos"
+                  },
+                  "children": [ "flex-layout.row#related-mobile1"]
+                  },
+                  
+                    "flex-layout.row#related-mobile1": {
+                      "title": "Container Slider Shelf",
+                      "props": {
+                        "blockClass": "mproduct-summary-mobile"
+                      },
+                      "children": ["list-context.product-list#shelf-relatedm1"]
+                    },
+                  
+                    "list-context.product-list#shelf-relatedm1": {
+                      "blocks": ["product-summary.shelf"],
+                      "children": ["slider-layout#shelf-pdp-mobile"],
+                      "props": {
+                        "orderBy": "OrderByTopSaleDESC",
+                        "blockClass":"mshelf"
+                      }
+                    },
+                "slider-layout#shelf-pdp-mobile": {
+                  "props": {
+                    "itemsPerPage": {
+                      "desktop": 3,
+                      "tablet": 3,
+                      "phone": 1
+                    },
+                    "infinite": true,
+                    "fullWidth": false,
+                    "blockClass": "shelf-pdp-mobile",
+                    "showPaginationDots": "never",
+                    "autoplay": {
+                      "timeout": 4500
+                    }
+                  }
+                }
+ }
+
+   
+    

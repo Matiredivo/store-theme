@@ -1,0 +1,123 @@
+{
+  "flex-layout.row#desc2": {
+    "children": [
+      "flex-layout.col#desc5",
+      "flex-layout.col#desc6",
+      "flex-layout.col#desc7",
+      "flex-layout.col#desc8"
+    ],
+    "props": {
+      "blockClass": "desc1",
+      "colSizing":"equal"
+    }
+  },
+  "flex-layout.col#desc5": {
+    "props": {
+      "blockClass": "desc",
+      "width": "20%"
+    },
+    "children": [
+      "image#desc5"
+    ]
+  },
+  "image#desc5": {
+    "props": {
+      "blockClass": "desc",
+      "src": "assets/descuentos/Eucerin1.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/eucerin/dermocosmetica/solares?_q=eucerin&initialMap=ft&initialQuery=eucerin&map=ft&order=OrderByBestDiscountDESC"
+      },
+      "height": "50px",
+      "width": "200px"
+    	    }
+  },
+  "flex-layout.col#desc6": {
+    "props": {
+      "blockClass": "desc",
+      "width": "20%"
+    },
+    "children": [
+      "image#desc6"
+    ]
+  },
+  "image#desc6": {
+    "props": {
+      "blockClass": "desc",
+      "src": "assets/descuentos/Isdin1.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/139/isdin?initialMap=productClusterIds&initialQuery=139&map=productClusterIds,b&order=OrderByBestDiscountDESC"
+      },
+      "height": "50px",
+      "width": "200px"
+    	    }
+  },
+  "flex-layout.col#desc7": {
+    "props": {
+      "blockClass": "desc",
+      "width": "20%"
+    },
+    "children": [
+      "image#desc7"
+    ]
+  },
+  "image#desc7": {
+    "props": {
+      "blockClass": "desc",
+      "src": "assets/descuentos/LRP1.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/dermocosmetica/solares/139/la-roche-posay?initialMap=productClusterIds&initialQuery=139&map=productClusterIds,b&order=OrderByBestDiscountDESC"
+      },
+      "height": "50px",
+      "width": "200px"
+    	    }
+  },
+  "flex-layout.col#desc8": {
+    "props": {
+      "blockClass": "desc",
+      "width": "20%"
+    },
+    "children": [
+      "image#desc8"
+    ]
+  },
+  "image#desc8": {
+    "props": {
+      "blockClass": "desc",
+      "src": "assets/descuentos/Vichy1.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/vichy?_q=vichy&map=ft&order=OrderByBestDiscountDESC"
+      },
+      "height": "50px",
+      "width": "200px"
+    	    }
+  },
+  "flex-layout.row#mdesc2": {
+    "children": [
+      "flex-layout.col#mdesc5"
+    ],
+    "props": {
+      "blockClass": "mdesc",
+      "colSizing":"equal"
+    }
+  },
+  "flex-layout.col#mdesc5": {
+    "props": {
+      "blockClass": "mdesc",
+      "width": "20%"
+    },
+    "children": [
+      "image#mdesc5"
+    ]
+  },
+  "image#mdesc5": {
+    "props": {
+      "blockClass": "mdesc",
+      "src": "assets/descuentos/LRPmobile.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/dermocosmetica/solares/139/la-roche-posay?initialMap=productClusterIds&initialQuery=139&map=productClusterIds,b&order=OrderByBestDiscountDESC"
+      },
+      "height": "100px",
+      "width": "450px"
+    	    }
+  }
+}

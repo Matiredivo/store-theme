@@ -1,0 +1,165 @@
+{
+  "store.custom#sucursales": {
+    "blocks": [
+      "flex-layout.row#sucursales",
+      "flex-layout.row#sucursales1"
+    ]
+  },
+
+  "flex-layout.row#sucursales": {
+    "props":{
+      "blockClass": "como-comprar"
+    },
+    "children": [
+      "flex-layout.col#Titulo-sucursales"
+    ]
+  },
+  "flex-layout.col#Titulo-sucursales":{
+    "props":{
+      "blockClass": "como-comprar"
+    },
+  "children": [
+    "rich-text#Titulo-sucursales"
+  ]
+},
+"rich-text#Titulo-sucursales": {
+  "props": {
+    "text": "SUCURSALES",
+    "blockClass": "title-General"
+  }
+},
+
+  "flex-layout.row#sucursales1":{
+    "props":{
+      "blockClass": "como-comprar"
+    },
+  "children": [
+    "flex-layout.col#text-sucursales1"
+  ]
+},
+ 
+  "flex-layout.col#text-sucursales1":{
+    "props": {
+      "blockClass": "como-comprar"
+    },
+    "children": [
+      "rich-text#Titulo-sucursales1",
+      "flex-layout.row#list-comprar"
+    ]
+  },
+
+  "rich-text#Titulo-sucursales1": {
+    "props": {
+      "text": "NUESTRAS SUCURSALES",
+      "blockClass": "titles-buy"
+    }
+  },
+
+  "flex-layout.row#list-comprar":{
+      "children": [
+        "flex-layout.col#text-sucursales",
+       "flex-layout.col#text-sucursales2"
+      //  "flex-layout.col#text-sucursales3"
+      ]
+  },
+  "flex-layout.col#text-sucursales":{
+    "children": [
+      "rich-text#List-1S",
+      "rich-text#List-2S",
+      "rich-text#List-3S",
+      "rich-text#List-4S",
+      "rich-text#List-5S",
+    "rich-text#List-6S"
+    ]
+  },
+  "rich-text#List-1S": {
+      "props": {
+        "text": "**TKL Galesa**<br>Av. Cabildo 1631.<br>Teléfono: (011) 4783-5210.<br>Horario: Lunes a Sábado, 8.30 a 21hs.",
+        "blockClass": "list-suc"
+      }
+  },
+  "rich-text#List-2S": {
+    "props": {
+      "text": "**TKL Facultad**<br>Marcelo T. de Alvear 2045.<br>Teléfono: (011) 4821-2787.<br>Horario: Lunes a Viernes, 8.30 a 20hs. Sábados 8.30 a 13hs..",
+      "blockClass": "list-suc"
+    }
+},
+"rich-text#List-3S": {
+  "props": {
+    "text": "**TKL Tekiel**<br>Av. Santa Fe 2399.<br>Teléfono: (011) 4823-1551 (líneas rotativas).<br>Horario: Lunes a Sábado, 8.30 a 21hs. Domingo 9 a 21hs..",
+    "blockClass": "list-suc"
+  }
+},
+"rich-text#List-4S": {
+  "props": {
+    "text": "**TKL Gonzalez**<br>Av. Rivadavia 5415.<br>Teléfono: (011) 4902-3333(líneas rotativas).<br>Horario: Los 365 días del año, 7 a 24hs.",
+    "blockClass": "list-suc"
+  }
+},
+"flex-layout.col#text-sucursales2":{
+  "children": [
+    "rich-text#List-7S",
+    "rich-text#List-8S",
+    "rich-text#List-9S",
+    "rich-text#List-10S",
+    "rich-text#List-11S",
+    "rich-text#List-12S"
+  ]
+},
+"rich-text#List-5S": {
+  "props": {
+    "text": "**TKL Gran Liniers**<br>Av. Rivadavia 11552.<br>Teléfono: (011) 4641-0055.<br>Horario: Los 365 días del año, las 24 hs.",
+    "blockClass": "list-suc"
+  }
+},
+"rich-text#List-6S": {
+  "props": {
+    "text": "**TKL San Agustín**<br>Av. Las Heras 2699.<br>Teléfono: (011) 4807-2790.<br>Horario: Lunes a Sábado, 8 a 22hs. Domingo 9 a 21hs.",
+    "blockClass": "list-suc"
+  }
+},
+"rich-text#List-7S": {
+  "props": {
+    "text": "**TKL Naveira**<br>Av. Gral. Las Heras 2318.<br>Teléfono: (011) 4803-3011.<br>Horario: Lunes a Viernes, 8.30 a 20.30hs. Sábados 8.30 a 13.30hs..",
+    "blockClass": "list-suc"
+  }
+},
+"rich-text#List-8S": {
+  "props": {
+    "text": "**TKL Quintana**<br>Pte. Quintana 392.<br>Teléfono: (011) 4813-5328/1189.<br>Horario: Lunes a Viernes, 8.30 a20.30hs. Sábados 8.30 a 14hs.",
+    "blockClass": "list-suc"
+  }
+},
+"flex-layout.col#text-sucursales3":{
+  "children": [
+    "rich-text#List-9S",
+    "rich-text#List-10S",
+    "rich-text#List-11S",
+    "rich-text#List-12S"
+  ]
+},
+"rich-text#List-9S": {
+  "props": {
+    "text": "**TKL América**<br>Av. Córdoba 1402.<br>Teléfono: (011) 4372-9633 /4373-2191.<br>Horario: Lunes a viernes de 8 a 20.30hs. Sábados de 8.30 a 13hs.",
+    "blockClass": "list-suc"
+  }
+},
+"rich-text#List-10S": {
+  "props": {
+    "text": "**TKL Etcheverry**<br>Av. Callao 299.<br>Teléfono: (011) 4371-4844/5626.<br>Horario: Lunes a viernes de 8.30 a 20hs. Sábados de 8.30 a 13hs.",
+    "blockClass": "list-suc"
+  }
+},
+"rich-text#List-11S": {
+  "props": {
+    "text": "**TKL La Perla**<br>Av. Vélez Sarsfield 4653.<br>Teléfono:4762-1102.<br>Horario: Lunes a Viernes, 8.30 a 20.30hs. Sábados, 8.30 a 13hs.",
+    "blockClass": "list-suc"
+  }
+},
+"rich-text#List-12S": {
+  "props": {
+    "text": "**TKL San Miguel**<br>Av. Ricardo Balbín 1181.<br>Teléfono:4664-9418/6263.<br>Horario: Lunes a Sábado, 8.30 a 21hs.",
+    "blockClass": "list-suc"
+  }
+}
+}

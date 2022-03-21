@@ -1,0 +1,80 @@
+{
+  "flex-layout.row#desc": {
+    "children": [
+      "flex-layout.col#desc1",
+      "flex-layout.col#desc2"
+    ],
+    "props": {
+      "blockClass": "desc",
+      "colSizing":"equal"
+    }
+  },
+  "flex-layout.col#desc1": {
+    "props": {
+      "blockClass": "desc",
+      "width": "40%"
+    },
+    "children": [
+      "image#desc1"
+    ]
+  },
+  "image#desc1": {
+    "props": {
+      "blockClass": "desc",
+      "src": "assets/descuentos/Avene.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/139/avene?initialMap=productClusterIds&initialQuery=139&map=productClusterIds,b&order=OrderByBestDiscountDESC"
+      },
+      "height": "100px",
+      "width": "450px"
+    	    }
+  },
+  "flex-layout.col#desc2": {
+    "props": {
+      "blockClass": "desc",
+      "width": "40%"
+    },
+    "children": [
+      "image#desc2"
+    ]
+  },
+  "image#desc2": {
+    "props": {
+      "blockClass": "desc",
+      "src": "assets/descuentos/Cetaphil.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/139/cetaphil?initialMap=productClusterIds&initialQuery=139&map=productClusterIds,b&order=OrderByBestDiscountDESC"
+      },
+      "height": "100px",
+      "width": "450px"
+    	    }
+  },
+  "flex-layout.row#mdesc": {
+    "children": [
+      "flex-layout.col#mdesc1"
+    ],
+    "props": {
+      "blockClass": "mdesc",
+      "colSizing":"equal"
+    }
+  },
+  "flex-layout.col#mdesc1": {
+    "props": {
+      "blockClass": "mdesc"
+    },
+    "children": [
+      "image#mdesc1"
+    ]
+  },
+  "image#mdesc1": {
+    "props": {
+      "blockClass": "mdesc",
+      "src": "assets/descuentos/Eucerinmobile.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/eucerin/dermocosmetica/solares?_q=eucerin&initialMap=ft&initialQuery=eucerin&map=ft&order=OrderByBestDiscountDESC"
+      },
+      "height": "100px",
+      "width": "450px"
+    	    }
+  }
+}

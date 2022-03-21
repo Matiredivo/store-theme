@@ -1,0 +1,116 @@
+{
+  "flex-layout.row#deals": {
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",   
+      "flex-layout.col#deals3" 
+    ],
+    "props": {
+      "blockClass": "deals"
+    }
+  },
+
+  "flex-layout.col#deals1": {
+    "props": {
+      "width": "30%"
+    },
+    "children": [
+      "image#deal1"
+    ]
+  },
+  "image#deal1": {
+    "props": {
+      "src": "assets/deals/Capilares.jpg",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/dermocosmetica/capilares"
+      },
+      "height": "50px",
+      "width": "350px"   
+     }
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "Free shipping",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals2": {
+    "props": {
+      "width": "30%"
+    },
+    "children": [
+      "image#deal2"
+          ]
+  },
+  "image#deal2": {
+    "props": {
+      "src": "assets/deals/Cremasc.jpg",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/dermocosmetica/cremas-corporales"
+      },
+      "height": "50px",
+      "width": "350px"    } 
+    },
+  "flex-layout.col#deals3": {
+    "props": {
+      "width": "30%"
+    },
+    "children": [
+      "image#deal3"
+    ]
+  },
+  "image#deal3": {
+    "props": {
+      "src": "assets/deals/Cremasf.jpg",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/dermocosmetica/cremas-faciales"
+      },
+      "height": "50px",
+      "width": "350px"    }
+    },
+    "flex-layout.row#mdeals": {
+      "children": [
+        "flex-layout.col#mdeals1",
+        "flex-layout.col#mdeals2"
+      ],
+      "props": {
+        "blockClass": "mdeals"
+      }
+    },
+  
+    "flex-layout.col#mdeals1": {
+      "props": {
+        "width": "30%"
+      },
+      "children": [
+        "image#mdeal1"
+      ]
+    },
+    "image#mdeal1": {
+      "props": {
+        "src": "assets/deals/Capilaresmobile.jpg",
+        "link": {
+          "url" : "https://www.farmaciastkl.com/dermocosmetica/capilares"
+        },
+        "height":50,
+        "width":180
+       }
+    },
+    "flex-layout.col#mdeals2": {
+      "props": {
+        "width": "30%"
+      },
+      "children": [
+        "image#mdeal2"
+            ]
+    },
+    "image#mdeal2": {
+      "props": {
+        "src": "assets/deals/Cremasc.jpg",
+        "link": {
+          "url" : "https://www.farmaciastkl.com/dermocosmetica/cremas-corporales"
+        },
+        "height":50,
+        "width":180   } 
+      }
+    }

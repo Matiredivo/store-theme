@@ -1,33 +1,101 @@
 {
   "store.home": {
-    "blocks": [
+    "blocks": ["responsive-layout.desktop#home",
+      "responsive-layout.mobile#home"]
+    },
+    "responsive-layout.desktop#home":{
+      "children":[
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
+      "rich-text#deal",
       "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#deals1",
+      "flex-layout.row#deals2",
+      "flex-layout.row#shelf-title",
+      "flex-layout.row#productos",
+      "flex-layout.row#desc",
+      "flex-layout.row#shelf-title1",
+      "flex-layout.row#imgshelf2",
+      "flex-layout.row#desc1",
+      "flex-layout.row#shelf-title2",
+      "flex-layout.row#imgshelf3",
+      "flex-layout.row#desc3",
+      "flex-layout.row#shelf-title3",
+      "flex-layout.row#imgshelf4",
+      "flex-layout.row#desc2",
+      "flex-layout.row#shelf-title4",
+      "flex-layout.row#imgshelf5"
+      //"newsletter-form"
+      //"flex-layout.row#shelf",
+      //"info-card#home",
+     // "rich-text#question",
+     // "rich-text#link",
+     // "newsletter"
     ]
   },
-
+  "responsive-layout.mobile#home":{
+    "children":
+    [
+    "list-context.image-list#demo",
+    /* You can make references to blocks defined in other files.
+     * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+    "__fold__.experimentalLazyAssets",
+    "rich-text#mdeal",
+    "flex-layout.row#mdeals",
+    "flex-layout.row#mdeals1",
+    "flex-layout.row#mdeals3",
+    "rich-text#mshelf-title",
+    "flex-layout.row#mproductos",
+    "flex-layout.row#mdesc",
+    "rich-text#mshelf-title1",
+    "flex-layout.row#mimgshelf2",
+    "flex-layout.row#mdesc1",
+    "rich-text#mshelf-title2",
+    "flex-layout.row#mimgshelf3",
+    "flex-layout.row#mdesc2",
+    "rich-text#mshelf-title4",
+    "flex-layout.row#mimgshelf5"
+  ]
+},
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 720,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/banners/Portada.jpg",
+          "mobileImage": "assets/banners/Portadamobile.jpg"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/banners/LRP.png",
+          "mobileImage": "assets/banners/LRPmobile.jpg"
+        },
+        {
+          "image": "assets/banners/Vichy.png",
+          "mobileImage": "assets/banners/Vichymobile.jpg"
+        },
+        {
+          "image": "assets/banners/Eucerin.jpg",
+          "mobileImage": "assets/banners/Eucerinmobile.jpg"
+        },
+        {
+          "image": "assets/banners/Isdin.jpg",
+          "mobileImage": "assets/banners/Isdinmobile.jpg"
+        },
+        {
+          "image": "assets/banners/Cetaphil.jpg",
+          "mobileImage": "assets/banners/Cetaphilmobile.jpg"
+        },
+        {
+          "image": "assets/banners/Caviahue.jpg",
+          "mobileImage": "assets/banners/Caviahuemobile.jpg"
+        },
+        {
+          "image": "assets/banners/Avene.jpg",
+          "mobileImage": "assets/banners/Avenemobile.jpg"
         }
+       
       ]
     }
   },
@@ -40,24 +108,120 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "carousel",
+      "autoplay":{
+        "timeout": 3500
+      }
     }
   },
-
-  "rich-text#shelf-title": {
+  // RICH TEXT TITULOS SLIDER CATEGORIAS
+  "rich-text#deal": {
     "props": {
-      "text": "## Summer",
+      "text": "Nuestras categorías",
+      "blockClass": "deal"
+    }
+  },
+  "rich-text#mdeal": {
+    "props": {
+      "text": "Nuestras categorías",
+      "blockClass": "mdeal"
+    }
+  },
+  "flex-layout.row#shelf-title":{
+    "children":["rich-text#shelf-title", "rich-text#shelf-titlee"]
+  },
+ 
+   "rich-text#shelf-title": {
+    "props": {
+      "text": "## Ofertas",
       "blockClass": "shelfTitle"
     }
   },
+  "rich-text#shelf-titlee": {
+    "props": {
+      "text": "## Ver todo",
+      "blockClass": "shelfTitle1"
+    }
+  },
+  "flex-layout.row#shelf-title1":{
+    "children":["rich-text#shelf-title1", "rich-text#shelf-titlee"]
+  },
+  "rich-text#shelf-title1": {
+    "props": {
+      "text": "## La Roche Posay - Vichy",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf-title2":{
+    "children":["rich-text#shelf-title2", "rich-text#shelf-titlee"]
+  },
+  "rich-text#shelf-title2": {
+    "props": {
+      "text": "## Eucerin",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf-title3":{
+    "children":["rich-text#shelf-title3", "rich-text#shelf-titlee"]
+  },
+  "rich-text#shelf-title3": {
+    "props": {
+      "text": "## Cuidado de la piel",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf-title4":{
+    "children":["rich-text#shelf-title4", "rich-text#shelf-titlee"]
+  },
+  "rich-text#shelf-title4": {
+    "props": {
+      "text": "## Cuidado personal",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#mshelf-title": {
+    "props": {
+      "text": "## OFERTAS",
+      "blockClass": "mshelfTitle"
+    }
+  },
+  "rich-text#mshelf-title1": {
+    "props": {
+      "text": "## LA ROCHE POSAY - VICHY",
+      "blockClass": "mshelfTitle"
+    }
+  },
+  "rich-text#mshelf-title2": {
+    "props": {
+      "text": "## EUCERIN",
+      "blockClass": "mshelfTitle"
+    }
+  },
+  "rich-text#mshelf-title3": {
+    "props": {
+      "text": "## LA ROCHE-POSAY",
+      "blockClass": "mshelfTitle"
+    }
+  },
+  "rich-text#mshelf-title4": {
+    "props": {
+      "text": "## CUIDADO DE LA PIEL",
+      "blockClass": "mshelfTitle"
+    }
+  },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    
+    "children": ["image#imgshelf" ,"list-context.product-list#demo1"],
+    "props": {
+      "blockClass": "shelf"
+    }
   },
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass":"shelf"
     }
   },
   "slider-layout#demo-products": {
@@ -65,7 +229,8 @@
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
+
       },
       "infinite": true,
       "fullWidth": false,
@@ -100,4 +265,30 @@
       "blockClass": "link"
     }
   }
+ /* "newsletter-form": {
+    "children": [
+      "rich-text#newsletter",
+      "flex-layout.row#newsletter"
+     
+    ]
+  },*/
+  /*"flex-layout.row#newsletter": {
+    "children": ["newsletter-input-email",
+                "newsletter-submit"
+                ],
+    "props": {
+      "blockClass": "shelf"
+    }
+  },
+  "rich-text#newsletter": {
+    "props": {
+      "text": "Suscribite a nuestro boletín y recibí novedades y ofertas",
+      "blockClass": "newsletter"
+    }
+  },
+  "newsletter-submit":{
+    "props": {
+      "submitButtonLabel": "Suscribirme"	
+    }
+  } */
 }

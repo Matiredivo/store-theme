@@ -1,0 +1,114 @@
+{
+  "flex-layout.row#deals2": {
+    "children": [
+      "flex-layout.col#deals8",
+      "flex-layout.col#deals9",   
+      "flex-layout.col#deals10",
+     "flex-layout.col#deals11"
+      //"flex-layout.col#deals12"
+    ],
+    "props": {
+      "blockClass": "deals4",
+      "colSizing":"equal",
+      "horizontalAlign": "CENTER"
+    }
+  },
+
+  "flex-layout.col#deals8": {
+    "props": {
+      "width": "20%",
+      "blockClass": "deals4"
+    },
+    "children": [
+      "image#deal8"
+    ]
+  },
+  "image#deal8": {
+    "props": {
+      "blockClass": "deals4",
+      "src": "assets/deals/Enviosgratis.png",
+      "link": {
+        "url" : "/faq"
+      },
+      "height": "150px",
+      "width": "250px"
+    	    }
+  },
+   "flex-layout.col#deals9": {
+    "props": {
+      "width": "20%",
+      "blockClass": "deals4"
+    },
+    "children": [
+      "image#deal9"
+          ]
+  },
+  "image#deal9": {
+    "props": {
+      "blockClass": "deals4",
+      "src": "assets/deals/Comocomprar.png",
+      "link": {
+        "url" : "/comprar-ahora"
+      },
+      "height": "150px",
+      "width": "250px"
+    }
+  },
+  "flex-layout.col#deals10": {
+    "props": {
+      "width": "20%",
+      "blockClass": "deals4"
+    },
+    "children": [
+      "image#deal10"
+    ]
+  },
+  "image#deal10": {
+    "props": {
+      "blockClass": "deals4",
+      "src": "assets/deals/Mercadopago.png",
+      "link": {
+        "url" : "https://www.mercadopago.com.ar/cuotas"
+      },
+      "height": "150px",
+      "width": "250px"
+    }
+  },
+  "flex-layout.col#deals11": {
+    "props": {
+      "width": "20%",
+      "blockClass": "deals4"
+    },
+    "children": [
+      "image#deal11"
+    ]
+  },
+  "image#deal11": {
+    "props": {
+      "blockClass": "deals4",
+      "src": "assets/deals/Retiroensucursal.png",
+      "link": {
+        "url" : "/sucursales"
+      },
+      "height": "150px",
+      "width": "250px"
+        }
+  },
+  "flex-layout.col#deals12": {
+    "props": {
+      "width": "20%",
+      "blockClass": "deals4"
+    },
+    "children": [
+      "image#deal12"
+    ]
+  },
+  "image#deal12": {
+    "props": {
+      "blockClass": "deals4",
+      "src": "assets/deals/envio.jpg",
+      "height": "150px",
+      "width": "250px"
+        }
+  }
+}

@@ -1,0 +1,100 @@
+{
+    "store.custom#boton": {
+      "blocks": [
+        "flex-layout.row#boton",
+        "flex-layout.row#arrepentimiento"
+
+      ]
+    },
+  
+    "flex-layout.row#boton": {
+        "props":{
+          "blockClass": "content-work"
+        },
+        "children": [
+          "rich-text#boton-titulo"
+        ]
+    },
+    "rich-text#boton-titulo": {
+        "props": {
+          "text": "ARREPENTIMIENTO DE COMPRA",
+          "blockClass": "title-General"
+        }
+    },
+    "flex-layout.row#arrepentimiento": {
+        "props":{
+          "blockClass": "arrepentimiento"
+        },
+        "children": [
+          "flex-layout.col#arrepentimiento"
+        ]
+    },
+    "flex-layout.col#arrepentimiento":{
+      "children": [
+        "rich-text#List-1B",
+        "rich-text#List-2B",
+        "rich-text#List-3B",
+        "rich-text#List-4B",
+        "rich-text#List-7B",
+        "rich-text#List-5B",
+        "rich-text#List-6B",
+        "rich-text#List-8B",
+        "rich-text#List-9B"
+      ]
+  },
+
+  "rich-text#List-1B": {
+      "props": {
+        "text": "Para gestionar tu solicitud de arrepentimiento de compra debes enviar un email a tienda@farmaciastkl.com con los siguientes datos:",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-2B": {
+      "props": {
+        "text": "-Nombre y Apellido",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-3B": {
+      "props": {
+        "text": "-DNI",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-4B": {
+      "props": {
+        "text": "-Email de contacto",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-5B": {
+      "props": {
+        "text": "-Número de pedido",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-6B": {
+      "props": {
+        "text": "-Motivo de arrepentimiento",
+        "blockClass": "list-buy"
+      }
+  },
+  "rich-text#List-7B": {
+    "props": {
+      "text": "-Teléfono de contacto",
+      "blockClass": "list-buy"
+    }
+},
+"rich-text#List-8B": {
+  "props": {
+    "text": "Nos caracterizamos por una exclusiva atención al público.",
+    "blockClass": "list-buy"
+  }
+},
+"rich-text#List-9B": {
+  "props": {
+    "text": "Gracias Equipo Farmacias TKL.",
+    "blockClass": "list-buy"
+  }
+}
+}

@@ -1,0 +1,763 @@
+{
+    "flex-layout.row#mobileDrawer": {
+        "children": [
+          "flex-layout.col#mobileDrawer"
+        ],
+        "props": {
+          "fullWidth": true,
+          "blockClass": "mobileDrawerContent"
+        }
+      },
+      "flex-layout.col#mobileDrawer": {
+        "children": [
+          "login",
+          "vtex.menu@2.x:menu#mobileDrawer"
+        ]
+      },
+      "vtex.menu@2.x:menu#mobileDrawer": {
+        "children": [
+          "menu-item#ofertas-mobile",
+          "menu-item#marcas-mobile",
+          "menu-item#cuidado-de-la-salud-mobile",
+          "menu-item#cuidado-personal-mobile",
+          "menu-item#dermocosmetica-mobile",
+          "menu-item#insumos-mobile",
+          "menu-item#nutricion-mobile",
+          "menu-item#fragancias-mobile"
+         
+          
+        ],
+        "props": {
+          "orientation": "vertical",
+          "blockClass": "menuDrawer"
+        }
+      },
+      "menu-item#cuidado-de-la-salud-mobile": {
+        "props": {
+          "id": "menu-item-smoke",
+          "type": "category",
+          "tagTitle": "CUIDADO DE LA SALUD",
+            "text": "CUIDADO DE LA SALUD",
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 1
+          },
+          "blockClass": "header-menu-item-mobile"
+        },
+        "blocks": [
+          "submenu.accordion#cuidadodelasalud"
+        ]
+      },
+        "submenu.accordion#cuidadodelasalud": {
+          "children": [
+            "flex-layout.row#cuidadodelasalud"
+          ],
+          "props": {
+            "blockClass": "submenu-mobile"
+          }
+        },
+        "flex-layout.row#cuidadodelasalud": {
+            "children": [
+              "rich-text#salud1",
+              "rich-text#salud2",
+              "rich-text#salud3",
+              "rich-text#salud4",
+              "rich-text#salud5",
+              "rich-text#salud6"
+            ]
+          },
+          "rich-text#salud1": {
+            "props": {
+              "text": "[Complementos de Famracia](/cuidado-de-salud/complementos-de-farmacia)",
+              "blockClass": "submenuTitle"
+            }
+          },
+          "rich-text#salud2": {
+            "props": {
+              "text": "[Diabéticos](/cuidado-de-salud/diabeticos)",
+              "blockClass": "submenuTitle"
+            }
+          },
+          "rich-text#salud3": {
+            "props": {
+              "text": "[Diagnóstico & Medición](/cuidado-de-salud/diagnostico-&-medicion)",
+              "blockClass": "submenuTitle"
+            }
+          },
+          "rich-text#salud4": {
+            "props": {
+              "text": "[Indumentaria](/cuidado-de-salud/indumentaria)",
+              "blockClass": "submenuTitle"
+            }
+          },
+          "rich-text#salud5": {
+            "props": {
+              "text": "[Ortopedia](/cuidado-de-salud/ortopedia)",
+              "blockClass": "submenuTitle"
+            }
+          },
+          "rich-text#salud6": {
+            "props": {
+              "text": "[Primeros Auxilios](/cuidado-de-salud/primeros-auxilios)",
+              "blockClass": "submenuTitle"
+            }
+          },
+          "menu-item#cuidado-personal-mobile": {
+            "props": {
+              "id": "menu-item-cuidado-personal",
+              "type": "category",
+              "tagTitle": "CUIDADO PERSONAL",
+                "text": "CUIDADO PERSONAL",
+              "highlight": false,
+              "itemProps": {
+                "categoryId": 1
+              },
+              "blockClass": "header-menu-item-mobile"
+            },
+            "blocks": [
+              "submenu.accordion#personal"
+            ]
+          },
+            "submenu.accordion#personal": {
+              "children": [
+                "flex-layout.row#personal"
+              ],
+              "props": {
+                "blockClass": "submenu-mobile"
+              }
+            },
+            "flex-layout.row#personal": {
+                "children": [
+                  "rich-text#personal1",
+                  "rich-text#personal2",
+                  "rich-text#personal3",
+                  "rich-text#personal4",
+                  "rich-text#personal5",
+                  "rich-text#personal6",
+                  "rich-text#personal7",
+                  "rich-text#personal8",
+                  "rich-text#personal9"
+                ]
+              },
+              "rich-text#personal1": {
+                "props": {
+                  "text": "[Cuidado de la Piel](/cuidado-personal/cuidado-de-la-piel)",
+                  "blockClass": "submenuTitle"
+                }
+              },
+              "rich-text#personal2": {
+                "props": {
+                  "text": "[Cuidado del Cabello](/cuidado-personal/cuidado-del-cabello)",
+                  "blockClass": "submenuTitle"
+                }
+              },
+              "rich-text#personal3": {
+                "props": {
+                  "text": "[Desodorantes Hombres](/cuidado-personal/desodorantes-hombre)",
+                  "blockClass": "submenuTitle"
+                }
+              },
+              "rich-text#personal4": {
+                "props": {
+                  "text": "[Desodorantes Mujer](/cuidado-personal/desodorantes-mujer)",
+                  "blockClass": "submenuTitle"
+                }
+              },
+              "rich-text#personal5": {
+                "props": {
+                  "text": "[Higiene Corporal](/cuidado-personal/higiene-corporal)",
+                  "blockClass": "submenuTitle"
+                }
+              },
+              "rich-text#personal6": {
+                "props": {
+                  "text": "[Higiene Oral](/cuidado-personal/higiene-oral)",
+                  "blockClass": "submenuTitle"
+                }
+              },
+              "rich-text#personal7": {
+                "props": {
+                  "text": "[Pañuelos Descartables](/cuidado-personal/pañuelos-descartables)",
+                  "blockClass": "submenuTitle"
+                }
+              },
+              "rich-text#personal8": {
+                "props": {
+                  "text": "[Protección Femenina](/cuidado-personal/proteccion-femenina)",
+                  "blockClass": "submenuTitle"
+                }
+              },
+              "rich-text#personal9": {
+                "props": {
+                  "text": "Talcos & Polvos Pédicos](/cuidado-personal/talcos-&-polvos-pedicos)",
+                  "blockClass": "submenuTitle"
+                }
+              },
+              "menu-item#dermocosmetica-mobile": {
+                "props": {
+                  "id": "menu-item-dermocosmetica",
+                  "type": "category",
+                  "tagTitle": "DERMOCOSMETICA",
+                    "text": "DERMOCOSMETICA",
+                  "highlight": false,
+                  "itemProps": {
+                    "categoryId": 1
+                  },
+                  "blockClass": "header-menu-item-mobile"
+                },
+                "blocks": [
+                  "submenu.accordion#dermocosmetica"
+                ]
+              },
+                "submenu.accordion#dermocosmetica": {
+                  "children": [
+                    "flex-layout.row#dermocosmetica"
+                  ],
+                  "props": {
+                    "blockClass": "submenu-mobile"
+                  }
+                },
+                "flex-layout.row#dermocosmetica": {
+                    "children": [
+                      "rich-text#dermocosmetica1",
+                      "rich-text#dermocosmetica2",
+                      "rich-text#dermocosmetica3",
+                      "rich-text#dermocosmetica4",
+                      "rich-text#dermocosmetica5",
+                      "rich-text#dermocosmetica6",
+                      "rich-text#dermocosmetica7",
+                      "rich-text#dermocosmetica8"
+                    ]
+                  },
+                  "rich-text#dermocosmetica1": {
+                    "props": {
+                      "text": "[Capilares](/dermocosmetica/capilares)",
+                      "blockClass": "submenuTitle"
+                    }
+                  },
+                  "rich-text#dermocosmetica2": {
+                    "props": {
+                      "text": "[Cremas Corporales](/dermocosmetica/cremas-corporales)",
+                      "blockClass": "submenuTitle"
+                    }
+                  },
+                  "rich-text#dermocosmetica3": {
+                    "props": {
+                      "text": "[Cremas Faciales](/dermocosmetica/cremas-faciales)",
+                      "blockClass": "submenuTitle"
+                    }
+                  },
+                  "rich-text#dermocosmetica4": {
+                    "props": {
+                      "text": "[Cuidado del Bebe](/dermocosmetica/cuidado-del-bb)",
+                      "blockClass": "submenuTitle"
+                    }
+                  },
+                  "rich-text#dermocosmetica5": {
+                    "props": {
+                      "text": "[Desodorantes](/dermocosmetica/desodorantes)",
+                      "blockClass": "submenuTitle"
+                    }
+                  },
+                  "rich-text#dermocosmetica6": {
+                    "props": {
+                      "text": "[Limpieza](/dermocosmetica/limpieza)",
+                      "blockClass": "submenuTitle"
+                    }
+                  },
+                  "rich-text#dermocosmetica7": {
+                    "props": {
+                      "text": "[Maquillaje](/dermocosmetica/maquillaje)",
+                      "blockClass": "submenuTitle"
+                    }
+                  },
+                  "rich-text#dermocosmetica8": {
+                    "props": {
+                      "text": "[Solares](/dermocosmetica/solares)",
+                      "blockClass": "submenuTitle"
+                    }
+                  },
+                  "menu-item#insumos-mobile": {
+                    "props": {
+                      "id": "menu-item-insumos",
+                      "type": "category",
+                      "tagTitle": "INSUMOS MEDICOS",
+                        "text": "INSUMOS MEDICOS",
+                      "highlight": false,
+                      "itemProps": {
+                        "categoryId": 1
+                      },
+                      "blockClass": "header-menu-item-mobile"
+                    },
+                    "blocks": [
+                      "submenu.accordion#insumos"
+                    ]
+                  },
+                    "submenu.accordion#insumos": {
+                      "children": [
+                        "flex-layout.row#insumos"
+                      ],
+                      "props": {
+                        "blockClass": "submenu-mobile"
+                      }
+                    },
+                    "flex-layout.row#insumos": {
+                        "children": [
+                          "rich-text#insumos1",
+                          "rich-text#insumos2",
+                          "rich-text#insumos3"
+                        ]
+                      },
+                      "rich-text#insumos1": {
+                        "props": {
+                          "text": "[Accesorios](/insumos-medicos/accesorios)",
+                          "blockClass": "submenuTitle"
+                        }
+                      },
+                      "rich-text#insumos2": {
+                        "props": {
+                          "text": "[Descartables](/insumos-medicos/descartables)",
+                          "blockClass": "submenuTitle"
+                        }
+                      },
+                      "rich-text#insumos3": {
+                        "props": {
+                          "text": "[Ortopedia](/insumos-medicos/ortopedia)",
+                          "blockClass": "submenuTitle"
+                        }
+                      },
+                     
+                          "menu-item#nutricion-mobile": {
+                            "props": {
+                              "id": "menu-item-nutricion",
+                              "type": "category",
+                              "tagTitle": "NUTRICION",
+                                "text": "NUTRICION",
+                              "highlight": false,
+                              "itemProps": {
+                                "categoryId": 1
+                              },
+                              "blockClass": "header-menu-item-mobile"
+                            },
+                            "blocks": [
+                              "submenu.accordion#nutricion"
+                            ]
+                          },
+                            "submenu.accordion#nutricion": {
+                              "children": [
+                                "flex-layout.row#nutricion"
+                              ],
+                              "props": {
+                                "blockClass": "submenu-mobile"
+                              }
+                            },
+                            "flex-layout.row#nutricion": {
+                                "children": [
+                                  "rich-text#nutricion1",
+                                  "rich-text#nutricion2",
+                                  "rich-text#nutricion3",
+                                  "rich-text#nutricion4"
+                                ]
+                              },
+                              "rich-text#nutricion1": {
+                                "props": {
+                                  "text": "[Alimentos](/nutricion/alimentos)",
+                                  "blockClass": "submenuTitle"
+                                }
+                            },
+                              "rich-text#nutricion2": {
+                                "props": {
+                                  "text": "[Suplemento Deportivo](/nutricion/suplemento-deportivo)",
+                                  "blockClass": "submenuTitle"
+                                }
+                              },
+                              "rich-text#nutricion3": {
+                                "props": {
+                                  "text": "[Suplemento Dietario](/nutricion/suplemento-dietario)",
+                                  "blockClass": "submenuTitle"
+                                }
+                              },
+                              "rich-text#nutricion4": {
+                                "props": {
+                                  "text": "[Suplemento Nutricional](/nutricion/suplemento-nutricional)",
+                                  "blockClass": "submenuTitle"
+                                }
+                              },
+                              "menu-item#fragancias-mobile": {
+                                "props": {
+                                  "id": "menu-item-fragancias",
+                                  "type": "category",
+                                  "tagTitle": "PERFUMES & FRAGANCIAS",
+                                    "text": "PERFUMES & FRAGANCIAS",
+                                  "highlight": false,
+                                  "itemProps": {
+                                    "categoryId": 1
+                                  },
+                                  "blockClass": "header-menu-item-mobile"
+                                },
+                                "blocks": [
+                                  "submenu.accordion#fragancias"
+                                ]
+                              },
+                                "submenu.accordion#fragancias": {
+                                  "children": [
+                                    "flex-layout.row#fragancias"
+                                  ],
+                                  "props": {
+                                    "blockClass": "submenu-mobile"
+                                  }
+                                },
+                                "flex-layout.row#fragancias": {
+                                    "children": [
+                                      "rich-text#fragancias1",
+                                      "rich-text#fragancias2",
+                                      "rich-text#fragancias3",
+                                      "rich-text#fragancias4",
+                                      "rich-text#fragancias5"
+                                    ]
+                                  },
+                                  "rich-text#fragancias1": {
+                                    "props": {
+                                      "text": "[Hombre Importado](/perfumes---fragancias/hombre%C2%A0importado)",
+                                      "blockClass": "submenuTitle"
+                                    }
+                                  },
+                                  "rich-text#fragancias2": {
+                                    "props": {
+                                      "text": "[Hombre Nacional](/perfumes---fragancias/hombre%C2%A0nacional)",
+                                      "blockClass": "submenuTitle"
+                                    }
+                                  },
+                                  "rich-text#fragancias3": {
+                                    "props": {
+                                      "text": "[Juvenil](/perfumes---fragancias/juvenil)",
+                                      "blockClass": "submenuTitle"
+                                    }
+                                  },
+                                  "rich-text#fragancias4": {
+                                    "props": {
+                                      "text": "[Mujer Importado](/perfumes---fragancias/mujer%C2%A0importado)",
+                                      "blockClass": "submenuTitle"
+                                    }
+                                  },
+                                  "rich-text#fragancias5": {
+                                    "props": {
+                                      "text": "[Mujer Nacional](/perfumes---fragancias/mujer%C2%A0nacional)",
+                                      "blockClass": "submenuTitle"
+                                    }
+                                  },
+                                  "menu-item#marcas-mobile": {
+                                    "props": {
+                                      "id": "menu-item-marcas",
+                                      "type": "category",
+                                      "tagTitle": "MARCAS",
+                                        "text": "MARCAS",
+                                      "highlight": false,
+                                      "itemProps": {
+                                        "categoryId": 1
+                                      },
+                                      "blockClass": "header-menu-item-mobile"
+                                    },
+                                    "blocks": [
+                                      "submenu.accordion#marcas"
+                                    ]
+                                  },
+                                    "submenu.accordion#marcas": {
+                                      "children": [
+                                        "flex-layout.row#marcas"
+                                      ],
+                                      "props": {
+                                        "blockClass": "submenu-mobile"
+                                      }
+                                    },
+                                    "flex-layout.row#marcas": {
+                                        "children": [
+                                          "rich-text#marcas1",
+                                          "rich-text#marcas2",
+                                          "rich-text#marcas3",
+                                          "rich-text#marcas4",
+                                          "rich-text#marcas5",
+                                          "rich-text#marcas6",
+                                          "rich-text#marcas7",
+                                          "rich-text#marcas8",
+                                          "rich-text#marcas9",
+                                          "rich-text#marcas10",
+                                          "rich-text#marcas11",
+                                          "rich-text#marcas12",
+                                          "rich-text#marcas13",
+                                          "rich-text#marcas14",
+                                          "rich-text#marcas15",
+                                          "rich-text#marcas16",
+                                          "rich-text#marcas17",
+                                          "rich-text#marcas18",
+                                          "rich-text#marcas19",
+                                          "rich-text#marcas20",
+                                          "rich-text#marcas21",
+                                          "rich-text#marcas22",
+                                          "rich-text#marcas23",
+                                          "rich-text#marcas24",
+                                          "rich-text#marcas25",
+                                          "rich-text#marcas26",
+                                          "rich-text#marcas27",
+                                          "rich-text#marcas28",
+                                          "rich-text#marcas29",
+                                          "rich-text#marcas30",
+                                          "rich-text#marcas31",
+                                          "rich-text#marcas32",
+                                          "rich-text#marcas33",
+                                          "rich-text#marcas34",
+                                          "rich-text#marcas35",
+                                          "rich-text#marcas36",
+                                          "rich-text#marcas37",
+                                          "rich-text#marcas38",
+                                          "rich-text#marcas39"
+                                        ]
+                                      },
+                                      "rich-text#marcas1": {
+                                        "props": {
+                                          "text": "[Aderma](/aderma)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas2": {
+                                        "props": {
+                                          "text": "[Atomo](/atomo)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas3": {
+                                        "props": {
+                                          "text": "[Atom Protect](/atom-protect)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas4": {
+                                        "props": {
+                                          "text": "[Avene](/avene)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas5": {
+                                        "props": {
+                                          "text": "[Aveno](/aveno)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas6": {
+                                        "props": {
+                                          "text": "[Bayer](/bayer)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas7": {
+                                        "props": {
+                                          "text": "[Bernabó Odontología](/bernabo-odontologia)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas8": {
+                                        "props": {
+                                          "text": "[Bioderma](/bioderma)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas9": {
+                                        "props": {
+                                          "text": "[Bucal Tac](/bucal-tac)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas10": {
+                                        "props": {
+                                          "text": "[By Derm](/by-derm)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas11": {
+                                        "props": {
+                                          "text": "[Caviahue](/caviahue)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas12": {
+                                        "props": {
+                                          "text": "[Cetaphil](/cetaphil)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas13": {
+                                        "props": {
+                                          "text": "[Corega](/corega)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas14": {
+                                        "props": {
+                                          "text": "[Dermaglos](/dermaglos)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas15": {
+                                        "props": {
+                                          "text": "[Ducray](/ducray)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas16": {
+                                        "props": {
+                                          "text": "[Ecohair](/ecohair)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas17": {
+                                        "props": {
+                                          "text": "[Elgydium](/elgydium)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas18": {
+                                        "props": {
+                                          "text": "[Eucerin](/eucerin)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas19": {
+                                        "props": {
+                                          "text": "[Eurolab](/eurolab)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas20": {
+                                        "props": {
+                                          "text": "[Factor ae](/factor-ae)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas21": {
+                                        "props": {
+                                          "text": "[Fragancias Cannon](/fragancias-cannon)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas22": {
+                                        "props": {
+                                          "text": "[Framingham Pharma](/framingham-pharma)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas23": {
+                                        "props": {
+                                          "text": "[Gelicart](/gelicart)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas24": {
+                                        "props": {
+                                          "text": "[Graviton](/graviton)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas25": {
+                                        "props": {
+                                          "text": "[Grimberg](/grimberg)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas26": {
+                                        "props": {
+                                          "text": "[Gynoderm](/gynoderm)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas27": {
+                                        "props": {
+                                          "text": "[Hipoglos](/hipoglos)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas28": {
+                                        "props": {
+                                          "text": "[Isdin](/isdin)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas29": {
+                                        "props": {
+                                          "text": "[Klorane](/klorane)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas30": {
+                                        "props": {
+                                          "text": "[La Roche-Posay](/la-roche-posay)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas31": {
+                                        "props": {
+                                          "text": "[Laboratorio Lago](/laboratorio-lago)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas32": {
+                                        "props": {
+                                          "text": "[Panalab](/panalab)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas33": {
+                                        "props": {
+                                          "text": "[Perpiel](/perpiel)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas34": {
+                                        "props": {
+                                          "text": "[Pharmaton](/pharmaton)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas35": {
+                                        "props": {
+                                          "text": "[Protección Femenina](/cuidado-personal/proteccion-femenina)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas36": {
+                                        "props": {
+                                          "text": "[Sensodyne](/sensodyne)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas37": {
+                                        "props": {
+                                          "text": "[Silfab](/silfab)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas38": {
+                                        "props": {
+                                          "text": "[Varisedan](/varisedan)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "rich-text#marcas39": {
+                                        "props": {
+                                          "text": "[Vichy](/vichy)",
+                                          "blockClass": "submenuTitle"
+                                        }
+                                      },
+                                      "menu-item#ofertas-mobile": {
+                                        "props": {
+                                          "id": "menu-ofertas",
+                                          "type": "category",
+                                          "tagTitle": "OFERTAS",
+                                            "text": "OFERTAS",
+                                          "highlight": false,
+                                          "itemProps": {
+                                            "categoryId": 1
+                                          },
+                                          "blockClass": "ofertas-mobile"
+                                        }
+                                    }
+}

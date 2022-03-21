@@ -1,0 +1,1431 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+       "blockClass": "menu"
+    },
+    "children": [
+      "flex-layout.row#categorias"
+      //"flex-layout.row#compra-sin-receta"
+    ]
+    },
+    "flex-layout.row#categorias":{
+      "props": {
+         "colSizing": "auto",
+         "blockClass": "menu"
+      },
+      "children": [
+        "menu-item#cuidadodelasalud",
+      "menu-item#cuidadopersonal",
+      "menu-item#dermocosmetica",
+      "menu-item#insumos",
+      "menu-item#nutricion",
+      "menu-item#perfumesyfragancias",
+      "menu-item#marcas",
+      "menu-item#ofertas"]
+    },
+    "flex-layout.row#compra-sin-receta":{
+      "props": {
+        "colSizing": "auto",
+        "blockClass": "receta"
+     },
+      "children": [
+        "rich-text#sin-receta"]
+    },
+  "menu-item#cuidadodelasalud": {
+    "props": {
+      "blockClass": "menu",
+      "id": "menu-item-category-cuidadodelasalud",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-de-salud",
+        "noFollow": false,
+        "tagTitle": "cuidado de la salud",
+        "text": "CUIDADO DE LA SALUD"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-cuidadodelasalud"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-cuidadodelasalud": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-cuidadodelasalud"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-cuidadodelasalud": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-categorias-complementosdefarmacia",
+      "menu-item#category-categorias-diabeticos",
+      "menu-item#category-categorias-diagnosticoymedicion",
+      "menu-item#category-categorias-indumentaria",
+      "menu-item#category-categorias-ortopedia",
+      "menu-item#category-categorias-primerosauxilios"
+    ]
+  },
+  "menu-item#category-categorias-complementosdefarmacia": {
+    "props": {
+      "blockClass": "menu",
+      "id": "menu-item-category-categorias-complementosdefarmacia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-de-salud/complementos-de-farmacia",
+        "noFollow": false,
+        "tagTitle": "Complementos de farmacia",
+        "text": "Complementos de farmacia"
+      }
+    }
+  },
+  "menu-item#category-categorias-diabeticos": {
+    "props": {
+      "blockClass": "menu",
+      "id": "menu-item-category-categorias-diabeticos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/categorias---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Diabéticos",
+        "text": "Diabéticos"
+      }
+    }
+  },
+  "menu-item#category-categorias-diagnosticoymedicion": {
+    "props": {
+      "blockClass": "menu",
+      "id": "menu-item-category-categorias-diagnosticoymedicion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-de-salud/diagnostico-&-medicion",
+        "noFollow": false,
+        "tagTitle": "Diagnóstico & Medición",
+        "text": "Diagnóstico & Medición"
+      }
+    }
+  },
+  "menu-item#category-categorias-indumentaria": {
+    "props": {
+      "blockClass": "menu",
+      "id": "menu-item-category-categorias-indumentaria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-de-salud/indumentaria",
+        "noFollow": false,
+        "tagTitle": "Indumentaria",
+        "text": "Indumentaria"
+      }
+    }
+  },
+  "menu-item#category-categorias-ortopedia": {
+    "props": {
+      "blockClass": "menu",
+      "id": "menu-item-category-categorias-ortopedia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-de-salud/ortopedia",
+        "noFollow": false,
+        "tagTitle": "Ortopedia",
+        "text": "Ortopedia"
+      }
+    }
+  },
+  "menu-item#category-categorias-primerosauxilios": {
+    "props": {
+      "blockClass": "menu",
+      "id": "menu-item-category-categorias-primerosauxilios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-de-salud/primeros-auxilios",
+        "noFollow": false,
+        "tagTitle": "Primeros auxilios",
+        "text": "Primeros auxilios"
+      }
+    }
+  },
+  "menu-item#dermocosmetica": {
+    "props": {
+      "id": "menu-item-category-dermocosmetica",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/dermocosmetica",
+        "noFollow": false,
+        "tagTitle": "dermocosmetica",
+        "text": "DERMOCOSMETICA"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-dermocosmetica"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-dermocosmetica": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-dermocosmetica"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-dermocosmetica": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-categorias-capilares",
+      "menu-item#category-categorias-cremascorporales",
+      "menu-item#category-categorias-cremasfaciales",
+      "menu-item#category-categorias-cuidadodelbb",
+      "menu-item#category-categorias-desodorantes",
+      "menu-item#category-categorias-limpieza",
+      "menu-item#category-categorias-maquillaje",
+      "menu-item#category-categorias-solares"
+    ]
+  },
+  "menu-item#category-categorias-capilares": {
+    "props": {
+      "id": "menu-item-category-categorias-capilares",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/dermocosmetica/capilares",
+        "noFollow": false,
+        "tagTitle": "Capilares",
+        "text": "Capilares"
+      }
+    }
+  },
+  "menu-item#category-categorias-cremascorporales": {
+    "props": {
+      "id": "menu-item-category-categorias-cremascorporales",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/dermocosmetica/cremas-corporales",
+        "noFollow": false,
+        "tagTitle": "Cremas corporales",
+        "text": "Cremas corporales"
+      }
+    }
+  },
+  "menu-item#category-categorias-cremasfaciales": {
+    "props": {
+      "id": "menu-item-category-categorias-cremasfaciales",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/dermocosmetica/cremas-faciales",
+        "noFollow": false,
+        "tagTitle": "Cremas faciales",
+        "text": "Cremas faciales"
+      }
+    }
+  },
+  "menu-item#category-categorias-cuidadodelbb": {
+    "props": {
+      "id": "menu-item-category-categorias-cuidadodelbb",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/dermocosmetica/cuidado-del-bb",
+        "noFollow": false,
+        "tagTitle": "Cuidado del bebe",
+        "text": "Cuidado del bebe"
+      }
+    }
+  },
+  "menu-item#category-categorias-desodorantes": {
+    "props": {
+      "id": "menu-item-category-categorias-desodorantes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/dermocosmetica/desodorantes",
+        "noFollow": false,
+        "tagTitle": "Desodorantes",
+        "text": "Desodorantes"
+      }
+    }
+  },
+  "menu-item#category-categorias-limpieza": {
+    "props": {
+      "id": "menu-item-category-categorias-limpieza",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/dermocosmetica/limpieza",
+        "noFollow": false,
+        "tagTitle": "Limpieza",
+        "text": "Limpieza"
+      }
+    }
+  },
+  "menu-item#category-categorias-maquillaje": {
+    "props": {
+      "id": "menu-item-category-categorias-maquillaje",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/dermocosmetica/maquillaje",
+        "noFollow": false,
+        "tagTitle": "Maquillaje",
+        "text": "Maquillaje"
+      }
+    }
+  },
+  "menu-item#category-categorias-solares": {
+    "props": {
+      "id": "menu-item-category-categorias-solares",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/dermocosmetica/solares",
+        "noFollow": false,
+        "tagTitle": "Solares",
+        "text": "Solares"
+      }
+    }
+  },
+  
+  "menu-item#cuidadopersonal": {
+    "props": {
+      "id": "menu-item-category-cuidadopersonal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-personal",
+        "noFollow": false,
+        "tagTitle": "cuidado personal",
+        "text": "CUIDADO PERSONAL"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-cuidadopersonal"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-cuidadopersonal": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-cuidadopersonal"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-cuidadopersonal": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-categorias-cuidadodelapiel",
+      "menu-item#category-categorias-cuidadodelcabello",
+      "menu-item#category-categorias-desodoranteshombres",
+      "menu-item#category-categorias-desodorantesmujer",
+      "menu-item#category-categorias-higienecorporal",
+      "menu-item#category-categorias-higieneoral",
+      "menu-item#category-categorias-pañuelosdescartables",
+      "menu-item#category-categorias-proteccionfemenina",
+      "menu-item#category-categorias-talcosypolvospedicos"
+    ]
+  },
+  "menu-item#category-categorias-cuidadodelapiel": {
+    "props": {
+      "id": "menu-item-category-categorias-cuidadodelapiel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-personal/cuidado-de-la-piel",
+        "noFollow": false,
+        "tagTitle": "Cuidado de la piel",
+        "text": "Cuidado de la piel"
+      }
+    }
+  },
+  "menu-item#category-categorias-cuidadodelcabello": {
+    "props": {
+      "id": "menu-item-category-categorias-cuidadodelcabello",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-personal/cuidado-del-cabello",
+        "noFollow": false,
+        "tagTitle": "Cuidado del cabello",
+        "text": "Cuidado del cabello"
+      }
+    }
+  },
+  "menu-item#category-categorias-desodoranteshombres": {
+    "props": {
+      "id": "menu-item-category-categorias-desodoranteshombres",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "farmaciastkl.com/cuidado-personal/desodorantes-hombre",
+        "noFollow": false,
+        "tagTitle": "Desodorantes hombre",
+        "text": "Desodorantes hombre"
+      }
+    }
+  },
+  "menu-item#category-categorias-desodorantesmujer": {
+    "props": {
+      "id": "menu-item-category-categorias-desodorantesmujer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-personal/desodorantes-mujer",
+        "noFollow": false,
+        "tagTitle": "Desodorantes mujer",
+        "text": "Desodorantes mujer"
+      }
+    }
+  },
+  "menu-item#category-categorias-proteccionfemenina": {
+    "props": {
+      "id": "menu-item-category-categorias-proteccionfemenina",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-personal/proteccion-femenina",
+        "noFollow": false,
+        "tagTitle": "Protección femenina",
+        "text": "Protección femenina"
+      }
+    }
+  },
+  "menu-item#category-categorias-talcosypolvospedicos": {
+    "props": {
+      "id": "menu-item-category-categorias-talcosypolvospedicos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-personal/talcos-&-polvos-pedicos",
+        "noFollow": false,
+        "tagTitle": "Talcos & Polvos pedicos",
+        "text": "Talcos & Polvos pedicos"
+      }
+    }
+  },
+  "menu-item#category-categorias-pañuelosdescartables": {
+    "props": {
+      "id": "menu-item-category-categorias-pañuelosdescartables",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-personal/pa%C3%B1uelos-descartables",
+        "noFollow": false,
+        "tagTitle": "Pañuelos descartables",
+        "text": "Pañuelos descartables"
+      }
+    }
+  },
+  "menu-item#category-categorias-higienecorporal": {
+    "props": {
+      "id": "menu-item-category-categorias-higienecorporal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-personal/higiene-corporal",
+        "noFollow": false,
+        "tagTitle": "Higiene corporal",
+        "text": "Higiene corporal"
+      }
+    }
+  },
+  "menu-item#category-categorias-higieneoral": {
+    "props": {
+      "id": "menu-item-category-categorias-higieneoral",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.farmaciastkl.com/cuidado-personal/higiene-oral",
+        "noFollow": false,
+        "tagTitle": "Higiene oral",
+        "text": "Higiene oral"
+      }
+    }
+  },
+  "menu-item#about-cuidadopersonal": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "CUIDADO PERSONAL",
+        "text": "CUIDADO PERSONAL"
+      }
+    }
+  },
+  "menu-item#more": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "More",
+        "text": "CUIDADO PERSONAL"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#more"
+    ]
+  },
+  "vtex.menu@2.x:submenu#more": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-more"
+    ]
+  },
+  "flex-layout.row#menu-more": {
+    "children": [
+      "flex-layout.col#menu-more-1",
+      "flex-layout.col#menu-more-2"
+    ]
+  },
+  "flex-layout.col#menu-more-1": {
+    "children": [
+      "vtex.menu@2.x:menu#more"
+    ]
+  },
+  "flex-layout.col#menu-more-2": {
+    "children": [
+      "info-card#home"
+    ]
+  },
+  "vtex.menu@2.x:menu#more": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#abou-us",
+      "menu-item#faq"
+    ]
+  },
+  "menu-item#abou-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "About us",
+        "text": "About us"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+  "menu-item#contact-us": {
+    "props": {
+      "id": "menu-item-contact-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  },
+  "menu-item#insumos": {
+    "props": {
+      "id": "menu-item-category-cuidadodelasalud",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/insumos-medicos",
+        "noFollow": false,
+        "tagTitle": "insumos medicos",
+        "text": "INSUMOS MEDICOS"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-insumos"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-insumos": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-insumos"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-insumos": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-categorias-accesorios",
+      "menu-item#category-categorias-descartables",
+      "menu-item#category-categorias-ortopedia1"
+    ]
+  },
+  "menu-item#category-categorias-accesorios": {
+    "props": {
+      "id": "menu-item-category-categorias-accesorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/insumos-medicos/accesorios",
+        "noFollow": false,
+        "tagTitle": "Accesorios",
+        "text": "Accesorios"
+      }
+    }
+  },
+  "menu-item#category-categorias-descartables": {
+    "props": {
+      "id": "menu-item-category-categorias-descartables",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/insumos-medicos/descartables",
+        "noFollow": false,
+        "tagTitle": "Descartables",
+        "text": "Descartables"
+      }
+    }
+  },
+  "menu-item#category-categorias-ortopedia1": {
+    "props": {
+      "id": "menu-item-category-categorias-ortopedia1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/insumos-medicos/ortopedia",
+        "noFollow": false,
+        "tagTitle": "Ortopedia",
+        "text": "Ortopedia"
+      }
+    }
+  },
+  "menu-item#nutricion": {
+    "props": {
+      "id": "menu-item-category-nutricion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/nutricion",
+        "noFollow": false,
+        "tagTitle": "Nutricion",
+        "text": "NUTRICION"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-nutricion"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-nutricion": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-nutricion"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-nutricion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-categorias-alimentos",
+      "menu-item#category-categorias-suplementodeportivo",
+      "menu-item#category-categorias-suplementodietario",
+      "menu-item#category-categorias-suplementonutricional"
+    ]
+  },
+  "menu-item#category-categorias-alimentos": {
+    "props": {
+      "id": "menu-item-category-categorias-alimentos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/nutricion/alimentos",
+        "noFollow": false,
+        "tagTitle": "Alimentos",
+        "text": "Alimentos"
+      }
+    }
+  },
+  "menu-item#category-categorias-suplementodeportivo": {
+    "props": {
+      "id": "menu-item-category-categorias-suplementodeportivo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/nutricion/suplemento-deportivo",
+        "noFollow": false,
+        "tagTitle": "Suplemento deportivo",
+        "text": "Suplemento deportivo"
+      }
+    }
+  },
+  "menu-item#category-categorias-suplementodietario": {
+    "props": {
+      "id": "menu-item-category-categorias-suplementodietario",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://tekielar.myvtex.com/nutricion/suplemento-dietario",
+        "noFollow": false,
+        "tagTitle": "Suplemento dietario",
+        "text": "Suplemento dietario"
+      }
+    }
+  },
+  "menu-item#category-categorias-suplementonutricional": {
+  "props": {
+    "id": "menu-item-category-categorias-suplementonutricional",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/nutricion/suplemento-nutricional",
+      "noFollow": false,
+      "tagTitle": "Suplemento nutricional",
+      "text": "Suplemento nutricional"
+    }
+  }
+},
+"menu-item#perfumesyfragancias": {
+  "props": {
+    "id": "menu-item-category-perfumesyfragancias",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://www.farmaciastkl.com/perfumes---fragancias",
+      "noFollow": false,
+      "tagTitle": "Perfumesyfragancias",
+      "text": "PERFUMES & FRAGANCIAS"
+    }
+  },
+  "blocks": [
+    "vtex.menu@2.x:submenu#category-perfumesyfragancias"
+  ]
+},
+"vtex.menu@2.x:submenu#category-perfumesyfragancias": {
+  "props": {
+    "width": "auto"
+  },
+  "children": [
+    "vtex.menu@2.x:menu#category-perfumesyfragancias"
+  ]
+},
+"vtex.menu@2.x:menu#category-perfumesyfragancias": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#category-categorias-hombrenacional",
+    "menu-item#category-categorias-mujernacional",
+    "menu-item#category-categorias-juveniles"
+  ]
+},
+"menu-item#category-categorias-hombrenacional": {
+  "props": {
+    "id": "menu-item-category-categorias-hombrenacional",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://www.farmaciastkl.com/perfumes---fragancias/hombre%C2%A0nacional",
+      "noFollow": false,
+      "tagTitle": "Hombre nacional",
+      "text": "Hombre nacional"
+    }
+  }
+},
+"menu-item#category-categorias-mujernacional": {
+  "props": {
+    "id": "menu-item-category-categorias-mujernacional",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://www.farmaciastkl.com/perfumes---fragancias/mujer%C2%A0nacional",
+      "noFollow": false,
+      "tagTitle": "Mujer Nacional",
+      "text": "Mujer nacional"
+    }
+  }
+},
+"menu-item#category-categorias-juveniles": {
+  "props": {
+    "id": "menu-item-category-categorias-juveniles",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://www.farmaciastkl.com/perfumes---fragancias/juvenil",
+      "noFollow": false,
+      "tagTitle": "Juvenil",
+      "text": "Juvenil"
+    }
+  }
+},
+"menu-item#marcas": {
+  "props": {
+    "id": "menu-item-category-marcas",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica",
+      "noFollow": false,
+      "tagTitle": "MARCAS",
+      "text": "MARCAS"
+    }
+  },
+  "blocks": [
+    "vtex.menu@2.x:submenu#category-marcas"
+  ]
+},
+"vtex.menu@2.x:submenu#category-marcas": {
+  "props": {
+    "width": "auto"
+  },
+  "children": [
+    "vtex.menu@2.x:menu#category-marcas"
+  ]
+},
+"vtex.menu@2.x:menu#category-marcas": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#aderma",
+    "menu-item#avene",
+    "menu-item#aveno",
+    "menu-item#atomo",
+    "menu-item#bioderma",
+    "menu-item#bucaltac",
+    "menu-item#byderm",
+    "menu-item#caviahue",
+    "menu-item#cetaphil",
+    "menu-item#corega",
+    "menu-item#dermaglos",
+    "menu-item#ducray",
+    "menu-item#ecohair",
+    "menu-item#elgydium",
+    "menu-item#eucerin",
+    "menu-item#eurolab",
+    "menu-item#factorae",
+    "menu-item#graviton",
+    "menu-item#gynoderm",
+    "menu-item#hipoglos",
+    "menu-item#isdin",
+    "menu-item#klorane",
+    "menu-item#larocheposay",
+    "menu-item#laboratoriolagos",
+    "menu-item#panalab",
+    "menu-item#perpiel",
+    "menu-item#pharmaton",
+    "menu-item#sensodyne",
+    "menu-item#silfab",
+    "menu-item#varisedan",
+    "menu-item#vichy"
+  ]
+},
+"menu-item#aderma": {
+  "props": {
+    "id": "menu-item-aderma",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/capilares",
+      "noFollow": false,
+      "tagTitle": "Aderma",
+      "text": "Aderma"
+    }
+  }
+},
+"menu-item#avene": {
+  "props": {
+    "id": "menu-item-avene",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cremas-corporales",
+      "noFollow": false,
+      "tagTitle": "Avene",
+      "text": "Avene"
+    }
+  }
+},
+"menu-item#aveno": {
+  "props": {
+    "id": "menu-item-aveno",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cremas-faciales",
+      "noFollow": false,
+      "tagTitle": "Aveno",
+      "text": "Aveno"
+    }
+  }
+},
+"menu-item#atomo": {
+  "props": {
+    "id": "menu-item-atomo",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cuidado-del-bb",
+      "noFollow": false,
+      "tagTitle": "Atomo",
+      "text": "Atomo"
+    }
+  }
+},
+"menu-item#bioderma": {
+  "props": {
+    "id": "menu-item-bioderma",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/desodorantes",
+      "noFollow": false,
+      "tagTitle": "Bioderma",
+      "text": "Bioderma"
+    }
+  }
+},
+"menu-item#bucaltac": {
+  "props": {
+    "id": "menu-item-bucaltac",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/limpieza",
+      "noFollow": false,
+      "tagTitle": "Bucaltac",
+      "text": "Bucaltac"
+    }
+  }
+},
+"menu-item#byderm": {
+  "props": {
+    "id": "menu-item-byderm",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/maquillaje",
+      "noFollow": false,
+      "tagTitle": "Byderm",
+      "text": "Byderm"
+    }
+  }
+},
+"menu-item#caviahue": {
+  "props": {
+    "id": "menu-item-caviahue",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/solares",
+      "noFollow": false,
+      "tagTitle": "Caviahue",
+      "text": "Caviahue"
+    }
+  }
+},
+"menu-item#cetaphil": {
+  "props": {
+    "id": "menu-item-cetaphil",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/capilares",
+      "noFollow": false,
+      "tagTitle": "Cetaphil",
+      "text": "Cetaphil"
+    }
+  }
+},
+"menu-item#corega": {
+  "props": {
+    "id": "menu-item-corega",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cremas-corporales",
+      "noFollow": false,
+      "tagTitle": "Corega",
+      "text": "Corega"
+    }
+  }
+},
+"menu-item#dermaglos": {
+  "props": {
+    "id": "menu-item-dermaglos",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cremas-faciales",
+      "noFollow": false,
+      "tagTitle": "Dermaglos",
+      "text": "Dermaglos"
+    }
+  }
+},
+"menu-item#ducray": {
+  "props": {
+    "id": "menu-item-ducray",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cuidado-del-bb",
+      "noFollow": false,
+      "tagTitle": "Ducray",
+      "text": "Ducray"
+    }
+  }
+},
+"menu-item#ecohair": {
+  "props": {
+    "id": "menu-item-ecohair",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/desodorantes",
+      "noFollow": false,
+      "tagTitle": "Ecohair",
+      "text": "Ecohair"
+    }
+  }
+},
+"menu-item#elgydium": {
+  "props": {
+    "id": "menu-item-elgydium",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/limpieza",
+      "noFollow": false,
+      "tagTitle": "Elgydium",
+      "text": "Elgydium"
+    }
+  }
+},
+"menu-item#eucerin": {
+  "props": {
+    "id": "menu-item-eucerin",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/maquillaje",
+      "noFollow": false,
+      "tagTitle": "Eucerin",
+      "text": "Eucerin"
+    }
+  }
+},
+"menu-item#eurolab": {
+  "props": {
+    "id": "menu-item-eurolab",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/solares",
+      "noFollow": false,
+      "tagTitle": "Eurolab",
+      "text": "Eurolab"
+    }
+  }
+},
+"menu-item#factorae": {
+  "props": {
+    "id": "menu-item-factorae",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/capilares",
+      "noFollow": false,
+      "tagTitle": "Factorae",
+      "text": "Factorae"
+    }
+  }
+},
+"menu-item#graviton": {
+  "props": {
+    "id": "menu-item-graviton",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cremas-corporales",
+      "noFollow": false,
+      "tagTitle": "Graviton",
+      "text": "Graviton"
+    }
+  }
+},
+"menu-item#gynoderm": {
+  "props": {
+    "id": "menu-item-gynoderm",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cremas-faciales",
+      "noFollow": false,
+      "tagTitle": "Gynoderm",
+      "text": "Gynoderm"
+    }
+  }
+},
+"menu-item#hipoglos": {
+  "props": {
+    "id": "menu-item-hipoglos",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cuidado-del-bb",
+      "noFollow": false,
+      "tagTitle": "Hipoglos",
+      "text": "Hipoglos"
+    }
+  }
+},
+"menu-item#isdin": {
+  "props": {
+    "id": "menu-item-isdin",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/desodorantes",
+      "noFollow": false,
+      "tagTitle": "Isdin",
+      "text": "Isdin"
+    }
+  }
+},
+"menu-item#klorane": {
+  "props": {
+    "id": "menu-item-klorane",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/limpieza",
+      "noFollow": false,
+      "tagTitle": "Klorane",
+      "text": "Klorane"
+    }
+  }
+},
+"menu-item#larocheposay": {
+  "props": {
+    "id": "menu-item-larocheposay",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/maquillaje",
+      "noFollow": false,
+      "tagTitle": "La Roche Posay",
+      "text": "La Roche Posay"
+    }
+  }
+},
+"menu-item#laboratoriolagos": {
+  "props": {
+    "id": "menu-item-laboratoriolagos",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/solares",
+      "noFollow": false,
+      "tagTitle": "Laboratorio Lagos",
+      "text": "Laboratorio Lagos"
+    }
+  }
+},
+"menu-item#panalab": {
+  "props": {
+    "id": "menu-item-panalab",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/capilares",
+      "noFollow": false,
+      "tagTitle": "Panalab",
+      "text": "Panalab"
+    }
+  }
+},
+"menu-item#perpiel": {
+  "props": {
+    "id": "menu-item-perpiel",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cremas-corporales",
+      "noFollow": false,
+      "tagTitle": "Perpiel",
+      "text": "Perpiel"
+    }
+  }
+},
+"menu-item#pharmaton": {
+  "props": {
+    "id": "menu-item-pharmaton",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cremas-faciales",
+      "noFollow": false,
+      "tagTitle": "Pharmaton",
+      "text": "Pharmaton"
+    }
+  }
+},
+"menu-item#sensodyne": {
+  "props": {
+    "id": "menu-item-sensodyne",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/cuidado-del-bb",
+      "noFollow": false,
+      "tagTitle": "Sensodyne",
+      "text": "Sensodyne"
+    }
+  }
+},
+"menu-item#silfab": {
+  "props": {
+    "id": "menu-item-silfab",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/desodorantes",
+      "noFollow": false,
+      "tagTitle": "Silfab",
+      "text": "Silfab"
+    }
+  }
+},
+"menu-item#varisedan": {
+  "props": {
+    "id": "menu-item-varisedan",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/limpieza",
+      "noFollow": false,
+      "tagTitle": "Varisedan",
+      "text": "Varisedan"
+    }
+  }
+},
+"menu-item#vichy": {
+  "props": {
+    "id": "menu-item-vichy",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "https://tekielar.myvtex.com/dermocosmetica/limpieza",
+      "noFollow": false,
+      "tagTitle": "Vichy",
+      "text": "Vichy"
+    }
+  }
+},
+"menu-item#ofertas": {
+  "props": {
+    "id": "menu-item-category-categorias-ofertas",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/categorias---accessories/clothing/",
+      "noFollow": false,
+      "tagTitle": "OFERTAS",
+      "text": "OFERTAS",
+      "blockClass": "ofertas"
+    }
+  }
+},
+"rich-text#sin-receta": {
+  "props": {
+    "text": "COMPRÁ CON RECETA",
+    "blockClass": "receta"
+  }
+}
+}

@@ -9,8 +9,8 @@
     "children": [
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
+     // "flex-layout.row#3-desktop"
     ]
   },
 
@@ -29,7 +29,8 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "blockClass": "mensaje",
+         "content": "HASTA 6 CUOTAS SIN INTERÉS | ENVÍO GRATIS"
     }
   },
   "flex-layout.row#3-desktop": {
@@ -42,20 +43,20 @@
     },
     "children": [
       "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "flex-layout.col#spacer"
     ]
   },
   "flex-layout.col#spacer": {
     "props": {
-      "width": "grow"
+      "width": "grow",
+      "blockClass": "spacer"
     }
   },
   "sticky-layout#4-desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": ["flex-layout.row#4-desktop" , "vtex.menu@2.x:menu#websites"]
   },
   "flex-layout.row#4-desktop": {
     "props": {
@@ -68,10 +69,8 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
+      "search-bar#desktop",
+      //"locale-switcher",
       "login",
       "minicart.v2"
     ]
@@ -82,18 +81,18 @@
     },
     "children": ["logo#desktop"]
   },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
-  },
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "assets/logotkl.png",
+      "width": "250",
+      "blockClass": "logo-desktop"
+    }
+  },
+  "search-bar#desktop":{
+    "props": {
+      "blockClass": "search-header"
     }
   },
   "header-layout.mobile": {
@@ -104,9 +103,10 @@
   },
   "flex-layout.row#1-mobile": {
     "children": [
-      "drawer",
+      "drawer#menuMobile",
       "logo#mobile",
       "flex-layout.col#spacer",
+      "flex-layout.col#header-icons",
       "login",
       "minicart.v2"
     ],
@@ -118,26 +118,67 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
-  },
-
-  "menu#drawer": {
-    "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
-    ],
     "props": {
       "orientation": "vertical"
+    },
+    "children": ["vtex.menu@2.x:menu#websites"]
+  },
+  "flex-layout.col#header-icons": {
+    "children": ["modal-trigger#search-modal"],
+    "props": {
+      "blockClass": "header-icons"
     }
   },
-
+  "modal-trigger#search-modal": {
+    "children": ["rich-text#search-bar", "modal-layout#search-bar"]
+  },
+  "rich-text#search-bar": {
+    "props": {
+      "blockClass": "search-bar-mobile-icon"
+    }
+  },
+  "modal-layout#search-bar": {
+    "children": ["search-bar#mobile"],
+    "props": {
+      "blockClass": "modal-search"
+    }
+  },
+  "search-bar#mobile":{
+    "props": {
+      "blockClass": "mobile"
+    }
+  },
+  "search-bar#modal-content": {
+  // "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "blockClass": "modal-search-bar"
+    }
+  },
+ /* "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "maxTopSearches": 5,
+      "maxSuggestedProducts": 3,
+      "productLayout": "HORIZONTAL",
+      "blockClass": "containerAutoCompleteResult"
+    }
+  }, */
   "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "70"
+      "url": "assets/logotkl.png",
+      "width": "150",
+      "blockClass": "logo-mobile"
+    }
+  },
+  "drawer#menuMobile": {
+    "children": [
+      "flex-layout.row#mobileDrawer"
+    ],
+    "props": {
+      "blockClass": "menuDrawer"
     }
   }
 }

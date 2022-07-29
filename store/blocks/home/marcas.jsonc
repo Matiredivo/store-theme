@@ -1,0 +1,67 @@
+{
+    "slider-layout#marcas": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 6,
+            "tablet": 3,
+            "phone": 3
+          },
+          "autoplay": {
+            "timeout": 4500
+          },
+          "infinite": true,
+          "showNavigationArrows": "never",
+          "blockClass": "marcas"
+        },
+        "children": ["image#marcas", "image#marcas1","image#marcas2","image#marcas3","image#marcas4",
+        "image#marcas5","image#marcas6","image#marcas7"]
+      },
+      "image#marcas": {
+        "props": {
+          "src": "assets/marcas/caviahue.png",
+          "blockClass": "marcas"
+        }
+        },
+        "image#marcas1": {
+            "props": {
+                "src": "assets/marcas/caviahue.png",
+                "blockClass": "marcas"
+            }
+            },
+            "image#marcas2": {
+                "props": {
+                    "src": "assets/marcas/caviahue.png",
+                    "blockClass": "marcas"
+                }
+                },
+                "image#marcas3": {
+                    "props": {
+                        "src": "assets/marcas/caviahue.png",
+                        "blockClass": "marcas"
+                    }
+                    },
+                    "image#marcas4": {
+                        "props": {
+                            "src": "assets/marcas/caviahue.png",
+                            "blockClass": "marcas"
+                        }
+                        },
+                        "image#marcas5": {
+                            "props": {
+                                "src": "assets/marcas/caviahue.png",
+                                "blockClass": "marcas"
+                            }
+                            },
+                            "image#marcas6": {
+                                "props": {
+                                    "src": "assets/marcas/caviahue.png",
+                                    "blockClass": "marcas"
+                                }
+                                },     
+                                "image#marcas7": {
+                                    "props": {
+                                        "src": "assets/marcas/caviahue.png",
+                                        "blockClass": "marcas"
+                                    }
+                                    }          
+}

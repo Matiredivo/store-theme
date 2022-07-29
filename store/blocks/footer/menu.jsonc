@@ -4,15 +4,16 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
+      "menu-item#personalization",
+      "menu-item#sucursales",
+      "menu-item#obras-sociales",
+      "menu-item#trabajo"
+     
     ]
   },
-  "menu-item#news": {
+  "menu-item#sucursales": {
     "props": {
-      "id": "menu-item-news",
+      "id": "menu-item-sucursales",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -20,14 +21,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
+        "tagTitle": "Sucursales",
+        "text": "Sucursales"
       }
     }
   },
-  "menu-item#blackfriday": {
+  "menu-item#obras-sociales": {
     "props": {
-      "id": "menu-item-black-friday",
+      "id": "menu-item-obras-sociales",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -35,14 +36,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
+        "tagTitle": "Obras sociales",
+        "text": "Obras sociales"
       }
     }
   },
-  "menu-item#sale": {
+  "menu-item#trabajo": {
     "props": {
-      "id": "menu-item-sale",
+      "id": "menu-item-trabajo",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -50,8 +51,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "Trabajá con nosotros",
+        "text": "Trabajá con nosotros"
       }
     }
   },
@@ -61,12 +62,14 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "footer",
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+        
       }
     }
   },
@@ -76,13 +79,29 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      "menu-item#contacto",
+      "menu-item#email"
+      //"menu-item#tvs"
     ]
   },
 
-  "menu-item#smartphones": {
+  "menu-item#contacto": {
+    "props": {
+      "id": "menu-item-smartphones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/smartphones",
+        "noFollow": true,
+        "tagTitle": "Contacto",
+        "text": "Contacto"
+      }
+    }
+  },
+  "menu-item#email": {
     "props": {
       "id": "menu-item-smartphones",
       "type": "custom",
@@ -92,13 +111,27 @@
         "type": "internal",
         "href": "/decoration/smartphones",
         "noFollow": true,
-        "tagTitle": "Smartphones",
-        "text": "Smartphones"
+        "tagTitle": "colfacor@colfacor.com.ar",
+        "text": "colfacor@colfacor.com.ar"
       }
     }
   },
-
   "menu-item#videogames": {
+    "props": {
+      "id": "menu-item-videogames",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/videogames",
+        "noFollow": true,
+        "tagTitle": "Videogames",
+        "text": "Videogames"
+      }
+    }
+  },
+  "menu-item#smartphones": {
     "props": {
       "id": "menu-item-videogames",
       "type": "custom",
@@ -194,15 +227,93 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
+      "menu-item#cliente",
+      "menu-item#preguntas",
+      "menu-item#terminos",
+      "menu-item#legales",
+      "menu-item#arrepentimiento"
+      //"menu-item#cropped"
     ]
   },
+  "menu-item#cliente": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Atención al cliente",
+        "text": "Atención al cliente"
+      }
+    }
+  },
+  "menu-item#preguntas": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Preguntas frecuentes",
+        "text": "Preguntas frecuentes"
+      }
+    }
+  },
 
+  "menu-item#terminos": {
+    "props": {
+      "id": "menu-item-shorts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/shorts",
+        "noFollow": false,
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+
+  "menu-item#legales": {
+    "props": {
+      "id": "menu-item-tank-tops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/tank-tops",
+        "noFollow": false,
+        "tagTitle": "legales de promocion",
+        "text": "Legales de promoción"
+      }
+    }
+  },
+
+  "menu-item#arrepentimiento": {
+    "props": {
+      "id": "menu-item-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/shirts",
+        "noFollow": false,
+        "tagTitle": "Botón de arrepentimiento",
+        "text": "Botón de arrepentimiento"
+      }
+    }
+  },
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
       "orientation": "vertical"
@@ -245,7 +356,7 @@
       "menu-item#sweatshirt",
       "menu-item#cropped"
     ]
-  },
+  }, 
 
   "menu-item#decoration-mobile": {
     "props": {
@@ -295,7 +406,7 @@
     ]
   },
 
-  "menu-item#clothing": {
+  "menu-item#shorts": {
     "props": {
       "id": "menu-item-category-clothing",
       "type": "custom",
@@ -311,7 +422,7 @@
     }
   },
 
-  "menu-item#shorts": {
+  "menu-item#tank-tops": {
     "props": {
       "id": "menu-item-shorts",
       "type": "custom",
@@ -327,7 +438,7 @@
     }
   },
 
-  "menu-item#tank-tops": {
+  "menu-item#shirts": {
     "props": {
       "id": "menu-item-tank-tops",
       "type": "custom",
@@ -342,24 +453,7 @@
       }
     }
   },
-
-  "menu-item#shirts": {
-    "props": {
-      "id": "menu-item-shirts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/shirts",
-        "noFollow": false,
-        "tagTitle": "Shirts",
-        "text": "Shirts"
-      }
-    }
-  },
-
-  "menu-item#sweatshirt": {
+ "menu-item#sweatshirt": {
     "props": {
       "id": "menu-item-sweat-shirts",
       "type": "custom",
@@ -387,6 +481,24 @@
         "noFollow": false,
         "tagTitle": "Cropped",
         "text": "Cropped"
+      }
+    }
+  },
+ 
+
+  "menu-item#redes": {
+    "props": {
+      "id": "menu-item-bags",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/d",
+        "noFollow": true,
+        "tagTitle": "Redes sociales",
+        "text": "Redes sociales"
       }
     }
   }

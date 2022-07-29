@@ -1,6 +1,7 @@
 {
   "flex-layout.row#selling-price": {
     "props": {
+      "blockClass":"precio1",
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
@@ -13,6 +14,7 @@
 
   "flex-layout.row#list-price-savings": {
     "props": {
+      "blockClass":"precio",
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,

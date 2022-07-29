@@ -3,14 +3,29 @@
 }
 
 .sliderLayoutContainer--carousel {
-  background-color: #F0F0F0;
-  min-height: 450px;
+  background-color: #FFFFFF;
+}
+.sliderLayoutContainer--shelf {
+ padding-left: 20px;
+ padding-right: 20px;
 }
 
 .sliderTrackContainer {
   max-width: 100%;
 }
+.slideChildrenContainer--shelf {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  width: 235px;
+  height:400px;
 
+}
+.slideChildrenContainer--marcas {
+  background-color: #eeeeee;
+  padding-bottom: 50px;
+  display:inline-flex;
+
+}
 .paginationDotsContainer {
   margin-top: .5rem;
   margin-bottom: .5rem;
@@ -19,13 +34,6 @@
 .layoutContainer--shelf {
   margin-top: 20px;
   margin-bottom: 20px;
-  max-width: 96rem;
   min-height: 550px;
 }
 
-.slide--shelf {
-  margin-bottom: 25px;
-  padding-left: .5rem;
-  padding-right: .5rem;
-  min-height: 550px;
-}

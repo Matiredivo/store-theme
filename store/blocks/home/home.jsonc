@@ -1,32 +1,73 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "flex-layout.row#banner",
+      //"list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
       "__fold__",
+      "flex-layout.row#desc",
+      "rich-text#categorias",
+      "flex-layout.row#categoriasfav",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "rich-text#ver-todo",
+      "flex-layout.row#descuentos",
+      "rich-text#shelf-title1",
+      "flex-layout.row#shelf1",
+      "rich-text#ver-todo",
+      "flex-layout.row#descuentos1",
+      "rich-text#shelf-title2",
+      "flex-layout.row#shelf2",
+      "rich-text#ver-todo",
+      "rich-text#marcas",
+      "flex-layout.row#marcas",
+      "rich-text#newsletter",
+      "newsletter-form",
+      "flex-layout.row#newsletterspace"
+      //"info-card#home",
+      //"rich-text#question",
+      //"rich-text#link",
+      //"newsletter-form"
     ]
   },
-
+  "flex-layout.row#newsletterspace": {
+    "props": {
+      "blockClass": "newsletter"
+    },
+    "children": [ "flex-layout.col#spacer"]
+  },
+  "rich-text#newsletter": {
+    "props": {
+      "text": "Suscribite a nuestro boletín y recibí novedades y ofertas",
+      "blockClass": "newsletter"
+    }
+  },
+  "flex-layout.row#marcas": {
+    "props": {
+      "blockClass": "marcas"
+    },
+    "children": [ "slider-layout#marcas"]
+  },
+  "flex-layout.row#banner": {
+    "props": {
+      "blockClass": "banner"
+    },
+    "children": [ "list-context.image-list#demo"]
+  },
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 570,
+      "blockClass": "banner",
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "image": "assets/banners/banner.png",
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
+          "image": "assets/banners/banner.png",
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
         }
       ]
@@ -40,25 +81,77 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
-    }
-  },
-
+      "fullWidth": false,
+      "showNavigationArrows":"never",
+      "autoplay": {
+                      "timeout": 4500
+                    }
+                  }
+    },
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Ofertas",
       "blockClass": "shelfTitle"
     }
   },
+  "rich-text#shelf-title1": {
+    "props": {
+      "text": "## Productos destacados",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelf-title2": {
+    "props": {
+      "text": "## Mas vendidos",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#marcas": {
+    "props": {
+      "text": "## Marcas destacadas",
+      "blockClass": "marcas"
+    }
+  },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "props": {
+      "blockClass": "shelf"
+    },
+    "children": ["flex-layout.col#imageshelf","flex-layout.col#shelff"]
+  },
+  "flex-layout.col#shelff": {
+    "title": "Container Slider Shelf",
+    "props": {
+      
+      "blockClass": "product-summary"
+    },
+    "children": [ "list-context.product-list#demo1"]
+  },
+  "flex-layout.col#imageshelf": {
+    "title": "Container Slider Shelf",
+    "props": {
+      "width":"20%",
+      "blockClass": "product-summary"
+    },
+    "children": [ "image#imgshelf"]
+  },
+  "image#imgshelf": {
+    "title": "Imimgshelfage",
+    "props": {
+      "blockClass": "carrusel",
+      "height": 400,
+      "width": 250,
+      "src": "assets/descuentos/descuento.png",
+      "link": {
+        "url" : "https://www.farmaciastkl.com/139?map=productClusterIds&order=OrderByBestDiscountDESC"
+      }
+    }
   },
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "shelf"
     }
   },
   "slider-layout#demo-products": {
@@ -68,12 +161,69 @@
         "tablet": 3,
         "phone": 1
       },
+      "showNavigationArrows": "true",
+      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": false,
+      "autoplay": {
+        "timeout": 4500
+      },
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#shelf1": {
+    "props": {
+      "blockClass": "shelf"
+    },
+    "children": ["list-context.product-list#demo2"]
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products1"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
     }
   },
-
+  "flex-layout.row#shelf2": {
+    "props": {
+      "blockClass": "shelf"
+    },
+    "children": ["list-context.product-list#demo2"]
+  },
+  "list-context.product-list#demo3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "autoplay": {
+        "timeout": 4500
+      },
+      "blockClass": "shelf"
+    }
+  },
   "info-card#home": {
     "props": {
       "id": "info-card-home",
@@ -87,7 +237,13 @@
       "textAlignment": "center"
     }
   },
-
+  "rich-text#ver-todo": {
+    "title":"delivery-1",
+    "props": {
+      "blockClass": "button-prefooter3",
+      "text": "[Más productos](/boton)"
+    }
+  },
   "rich-text#question": {
     "props": {
       "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
@@ -100,5 +256,22 @@
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
     }
-  }
+  },
+  "newsletter-form": {
+    "props": {
+      "blockClass": "newslwtter"
+    },
+    "children": [
+      //"flex-layout.col#newsletter",
+      //"flex-layout.col#newsletter1"
+      "newsletter-input-email",
+      //"newsletter-input-name",
+      "newsletter-submit"
+    ]
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "Suscribite"
+    }
+}
 }

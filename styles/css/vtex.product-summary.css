@@ -16,17 +16,19 @@
     display: none;
   }
 }
-
 .nameContainer {
-  justify-content: start;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  text-align: center;
+ vertical-align:top;
+  min-height: 30px;
+  padding-bottom: 20px;
+  
 }
 
 .brandName {
   font-weight: 600;
-  font-size: 18px;
-  color: #2E2E2E;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #616161;
 }
 
 .container {
@@ -39,4 +41,31 @@
 
 .image {
   border-radius: 0.25rem;
+}
+.productBrandContainer--brand{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height:15px;
+ 
+}
+.productBrandName--brand{
+font-family: sans-serif;
+font-weight:bold;
+font-size: 15px;
+color:#424242
+
+}
+.image--image{
+  padding-top: 30px;
+}
+.element :global(.vtex-product-summary-2-x-imageContainer) :global(.vtex-store-components-3-x-discountInsideContainer){
+  right: 0px;
+  width: 65px;
+  height: 40px;
+  background-color: red;
+   border-radius: 0%;
+   padding-top: 9px;
+   font-size: 20px;
+   font-weight: 600;
 }

@@ -1,10 +1,10 @@
-.flexRowContent--menu-link,
+
 .flexRowContent--main-header {
   padding: 0 0.5rem;
 }
 
 @media screen and (min-width: 40em) {
-  .flexRowContent--menu-link,
+  
   .flexRowContent--main-header {
     padding: 0 1rem;
   }
@@ -18,12 +18,12 @@
 }
 
 .flexRowContent--menu-link {
-  background-color: #03044e;
+  background-color: #E02D2C;
   color: #fff;
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .flexRowContent--main-header-mobile {
@@ -41,12 +41,32 @@
   color: #727273;
   font-size: 14px;
 }
-
-.flexRow--deals {
-  background-color: #0F3E99;
-  padding: 14px 0px;
+.flexRow--categorias{
+  background-color: #eeeeee;
+  padding-left: 3%;
+  padding-right: 1%;
 }
+.flexRow--deals {
+  background-color: #FFFFFF;
 
+}
+.flexRow--descuentos{
+  background-color: #eeeeee;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.flexRow--descuentos1{
+  background-color: #eeeeee;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 3%;
+  padding-right: 4%;
+}
+.flexRowContent--deals  {
+  align-items: center;
+  padding-left: 10%;
+}
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;
 }
@@ -92,7 +112,74 @@
 .flexColChild--quickviewDetails:last-child {
   height: 34% !important;
 }
-
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+.flexRow--shelf{
+  background-color: #eeeeee;
+}
+.flexRow--marcas{
+  background-color: #eeeeee;
+  padding-left: 30px;
+  padding-right: 5%;
+}
+.flexRow--marcas1{
+  background-color: #eeeeee;
+  padding-left: 30px;
+  padding-right: 5%;
+}
+.flexRow--footer{
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.flexRow--footer2{
+  background-color: #eeeeee;
+  padding-left: 20%;
+}
+.flexRow--producto{
+  background-color: #eeeeee;
+}
+.flexRow--productoo{
+  background-color: #eeeeee;
+  padding-bottom: 50px;
+}
+.flexRow--precios{
+ min-height: 40px;
+ justify-content: center;
+ align-items: center;
+  }
+  .flexRow--precios2{
+    min-height: 80px;
+     }
+.flexRow--desc{
+  background-color: #eeeeee;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-left: 3%;
+  padding-right: 5%;
+}     
+.flexRow--banner{
+  background-color: #eeeeee;
+ 
+}     
+.flexRowContent--preciolista{
+ justify-content: center;
+ padding-top: 10%;
+ padding-bottom: 2%;
+}     
+.flexRowContent--precios{
+justify-content: center;
+
+}
+.flexRowContent--precio1{
+  justify-content: center;
+  font-size: 10px;
+  }
+.flexRowContent--footer{
+  padding-left: 3%;
+  }
+.flexRowContent--menu{
+  background-color: #bdbdbd;
 }

@@ -1,0 +1,72 @@
+{
+  "flex-layout.row#deals": {
+    "children": [
+     // "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4"
+    ],
+    "props": {
+      "blockClass": "deals"
+    }
+  },
+
+  "flex-layout.col#deals1": {
+    "props": {
+      "blockClass": "deals",
+      "width":"30%"
+    },
+    "children": [
+      "image#deal1"
+    ]
+  },
+  "image#deal1": {
+    "props": {
+      "src": "assets/logos/comprar.png"
+    }
+    },
+  "flex-layout.col#deals2": {
+    "props": {
+      "blockClass": "deals",
+      "width":"30%"
+    },
+    "children": [
+      "image#deal2"
+    ]
+  },
+  "image#deal2": {
+    "props": {
+      "src": "assets/logos/comprar.png"
+    }
+    },
+
+  "flex-layout.col#deals3": {
+    "props": {
+      "blockClass": "deals",
+      "width":"30%"
+    },
+    "children": [
+      "image#deal3"
+    ]
+  },
+  "image#deal3": {
+    "props": {
+      "src": "assets/logos/pagos.png"
+    }
+    },
+
+  "flex-layout.col#deals4": {
+    "props": {
+      "blockClass": "deals",
+      "width":"30%"
+    },
+    "children": [
+      "image#deal4"
+    ]
+  },
+  "image#deal4": {
+    "props": {
+      "src": "assets/logos/retiro.png"
+    }
+  }
+}

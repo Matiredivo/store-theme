@@ -5,26 +5,86 @@
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#footer-2-desktop"
+      //"flex-layout.row#footer-3-desktop"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
+      "flex-layout.col#footer-1-desktop",
+      "flex-layout.col#footer-2-desktop",
+      "flex-layout.col#footer-3-desktop",
+      "flex-layout.col#footer-4-desktop"
+      
+    ],
+    "props": {
+      "blockClass": "footer"
+      
+    }
+  },
+  "flex-layout.col#footer-1-desktop": {
+    "children": [
+     // "rich-text#footer1",
+      "vtex.menu@2.x:menu#Products"
+     
+    ],
+    "props": {
+      "blockClass": "footer"
+    }
+  },
+  "flex-layout.col#footer-2-desktop": {
+    "children": [
+    // "rich-text#footer2",
+      "vtex.menu@2.x:menu#footer-clothing"
+    ],
+    "props": {
+      "blockClass": "footer"
+    }
+  },
+  "flex-layout.col#footer-3-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-decoration"
+      //"rich-text#footer3"
+      
+    ],
+    "props": {
+      "blockClass": "footer"
+    }
+  },
+  "flex-layout.col#footer-4-desktop": {
+    "children": [
+      "menu-item#redes",
+     // "rich-text#footer4",
       "social-networks"
     ],
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "footer"
     }
   },
-
+  "rich-text#footer4": {
+    "props": {
+      "text": "Redes sociales",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer1": {
+    "props": {
+      "text": "Institucional",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer2": {
+    "props": {
+      "text": "Atención al cliente",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer3": {
+    "props": {
+      "text": "Envíanos tu mensaje a colfacor@colfacor.com.ar",
+      "blockClass": "footer"
+    }
+  },
   "social-networks": {
     "props": {
       "socialNetworks": [
@@ -49,16 +109,36 @@
   },
 
   "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
+    "children": ["flex-layout.col#marca-registrada","flex-layout.col#imagenes-footer"],
     "props": {
-      "blockClass": "payment-methods"
+      "blockClass": "footer2"
+    }
+  },
+  "flex-layout.col#marca-registrada": {
+    "children":
+     ["rich-text#marca-registrada"],
+    "props": {
+      "blockClass": "footer2"
+    }
+  },
+  "rich-text#marca-registrada": {
+    "props": {
+      "text": "Colfacor ®  | Todos los derechos reservados.",
+      "blockClass": "footer2"
+    }
+  },
+  "flex-layout.col#imagenes-footer": {
+    "children":
+     ["accepted-payment-methods"],
+    "props": {
+      "blockClass": "footer2"
     }
   },
   "accepted-payment-methods": {
     "props": {
       "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
     }
-  },
+  }, 
 
   "flex-layout.row#footer-3-desktop": {
     "children": ["rich-text#footer"],

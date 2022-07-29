@@ -1,0 +1,68 @@
+{
+    "flex-layout.row#descuentos": {
+        "props": {
+          "blockClass": "descuentos"
+        },
+        "children": ["image#descuentos"]
+      },
+      "image#descuentos": {
+        "props": {
+          "blockClass": "descuentos",
+          "src": "assets/descuentos/desc.png"
+        }
+        },
+        "flex-layout.row#descuentos1": {
+          "props": {
+            "blockClass": "descuentos1"
+          },
+          "children": ["image#descuentos1","image#descuentos2"]
+        },
+        "image#descuentos1": {
+          "props": {
+            "blockClass": "descuentos",
+            "src": "assets/descuentos/desc2.png"
+          }
+          },
+          "image#descuentos2": {
+            "props": {
+              "blockClass": "descuentos",
+              "src": "assets/descuentos/desc2.png"
+            }
+            },
+            "flex-layout.row#desc": {
+              "props": {
+                "blockClass": "desc"
+              },
+              "children": ["image#desc","image#desc1","image#desc2","image#desc3","image#desc4"]
+            },
+            "image#desc": {
+              "props": {
+                "blockClass": "descu",
+                "src": "assets/descuentos/descu.png"
+              }
+              },
+              "image#desc1": {
+                "props": {
+                  "blockClass": "descu",
+                  "src": "assets/descuentos/20%.png"
+                }
+                },
+             "image#desc2": {
+                 "props": {
+                  "blockClass": "descu",
+                  "src": "assets/descuentos/30%.png"
+                  }
+                  },
+                  "image#desc3": {
+                    "props": {
+                     "blockClass": "descu",
+                     "src": "assets/descuentos/35%.png"
+                     }
+                     },    
+                     "image#desc4": {
+                      "props": {
+                       "blockClass": "descu",
+                       "src": "assets/descuentos/70%.png"
+                       }
+                       }               
+}

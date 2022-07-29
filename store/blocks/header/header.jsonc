@@ -8,8 +8,10 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "list-context.image-list#header",
+      //"flex-layout.row#3-desktop",
+      "sticky-layout#4-desktop",
+      "flex-layout.row#menu"
     ]
   },
 
@@ -29,10 +31,18 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "rich-text#header"
+     // "vtex.menu@2.x:menu#websites",
+     //"flex-layout.col#spacer",
+     // "vtex.menu@2.x:menu#institutional"
+
     ]
+  },
+  "rich-text#header": {
+    "props": {
+      "text": "ENVÍOS A TODO EL PAÍS",
+      "blockClass": "header"
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -56,10 +66,10 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
+      //"flex-layout.col#category-menu",
+       "search-bar",
       "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
+      //"locale-switcher",
       "login",
       "minicart.v2"
     ]
@@ -80,9 +90,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180",
-      "height": "12"
+      "url": "assets/logos/logo.png"
     }
   },
   "header-layout.mobile": {
@@ -128,6 +136,47 @@
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
       "width": "77.5",
       "height": "27.5"
+    }
+  },
+  "flex-layout.row#menu": {
+    "props": {
+      "blockClass": "menu",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [ "vtex.menu@2.x:menu#websites"]
+  },
+  "list-context.image-list#header": {
+    "children": ["slider-layout#header"],
+    "props": {
+      
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/banners/envios.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        },
+        {
+          "image": "assets/banners/envios.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#header": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "carousel"
     }
   }
 }

@@ -5,15 +5,37 @@
 }
 
 .container--shelfTitle {
+  background-color: #eeeeee;
   color: #727273;
   justify-content: center;
   text-align: center;
 }
-
+.container--vertodo {
+  background-color: #eeeeee;
+  color: #727273;
+  justify-content: center;
+  text-align: center;
+}
+.container--marcas {
+  background-color: #eeeeee;
+  color: #727273;
+  padding-left: 5%;
+}
+.container--footer {
+ padding-left: 25px;
+}
 .headingLevel2--shelfTitle {
   font-weight: 200;
+  font-family: sans-serif;
+  font-size: 50px;
+  color:black;
 }
-
+.headingLevel2--vertodo {
+  font-weight: 200;
+  font-family: sans-serif;
+  font-size: 32px;
+  color:#ff0000ff;
+}
 .container--deals .paragraph {
   margin: 0;
 }
@@ -87,4 +109,38 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+}
+.container--button-prefooter3 {
+  background-color: #eeeeee;
+  justify-content: center;
+  text-align: center;
+}
+.paragraph--footer{
+  font-family: sans-serif;
+  font-size: 23px;
+  color: black;
+}
+.paragraph--footer2{
+  font-family: sans-serif;
+  font-size: 22px;
+}
+.wrapper--button-prefooter3 {
+  background: red;
+  color:white;
+  padding-left:40px;
+  padding-right:40px;
+  padding-top: -20%;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+.link--button-prefooter3{
+  text-decoration: none;
+  color:white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container--newsletter{
+  justify-content: center;
 }

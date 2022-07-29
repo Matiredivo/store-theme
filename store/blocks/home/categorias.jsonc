@@ -1,0 +1,51 @@
+{
+"rich-text#categorias": {
+        "props": {
+          "text": "## Categorías mas vistas",
+          "blockClass": "shelfTitle"
+        }
+      },
+      
+"flex-layout.row#categoriasfav": {
+    "props": {
+      "blockClass": "categorias"
+    },
+    "children": ["image#categorias","image#categorias1","image#categorias2","image#categorias3","image#categorias4","image#categorias5"]
+  },
+  "image#categorias": {
+    "props": {
+      "blockClass": "categorias",
+      "src": "assets/categorias/bebe.png"
+    }
+    },
+    "image#categorias1": {
+      "props": {
+        "blockClass": "categorias",
+        "src": "assets/categorias/bebe.png"
+      }
+      },
+   "image#categorias2": {
+       "props": {
+        "blockClass": "categorias",
+        "src": "assets/categorias/bebe.png"
+        }
+        },
+   "image#categorias3": {
+       "props": {
+        "blockClass": "categorias",
+       "src": "assets/categorias/bebe.png"
+          }
+          },
+   "image#categorias4": {
+        "props": {
+          "blockClass": "categorias",
+        "src": "assets/categorias/bebe.png"
+            }
+            },
+    "image#categorias5": {
+         "props": {
+         "blockClass": "categorias",
+          "src": "assets/categorias/bebe.png"
+                    }
+                    }
+        }

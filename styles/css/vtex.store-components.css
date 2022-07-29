@@ -60,7 +60,13 @@
   max-height: 300px;
   margin-bottom: 20px;
 }
-
+.imageElement--carrusel {
+ margin-left: 20%;
+ border-radius: 10px;
+}
+.imageElement--descu {
+  border-radius: 10px;
+ }
 .skuSelectorContainer {
   margin: 1rem 0;
 }
@@ -110,4 +116,22 @@
 
 .image {
   image-rendering: -webkit-optimize-contrast;
+}
+.autoCompleteOuterContainer{
+  width: 250%;
+  padding-top: 12%;
+}
+.imageElement--categorias{
+  border-radius: 15px;
+}
+.discountInsideContainer{
+  margin-right: 85%;
+  margin-top: -10px;
+}
+.imageElement--marcas{
+  border-radius: 15px;
+  margin-left: 30px;
+}
+.productNameContainer--quickview{
+  padding-top: 30px;
 }
